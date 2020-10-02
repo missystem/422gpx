@@ -1,6 +1,6 @@
 # 422 Group
 
-## meeting time ＜/br＞
-Saturday noon (Oct 3rd) ＜/br＞
-Monday 4-6pm ＜/br＞
-Friday 4-6pm ＜/br＞
+## meeting time    
+Saturday noon (Oct 3rd)    
+Monday 4-6pm     
+Friday 4-6pm     
