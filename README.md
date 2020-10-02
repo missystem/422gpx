@@ -1,3 +1,4 @@
-# 422_straight_A
-# we can have ideas here
-# ok
+# 422 Group
+
+## meeting on Saturday noon
+## meeting on Monday 4-6pm
