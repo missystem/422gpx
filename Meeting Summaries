@@ -1,11 +1,11 @@
 Saturday - Oct 3rd
-  Group role assignments:   
+ Group role assignments:   
      Repo Master : Clean repo and make sure things are structured nice-> Missy
      Build Master / Architect : Overall build plan and design-> Lindsay
      Documentation Boss / Schedule : Make sure everything is on track and document meetings and project-> Donna
      Quality Assurance : Test code and modules to make sure all is running smoothly -> Xuehai
 
-Project Overview / Sketch out MVP:
+ Project Overview / Sketch out MVP:
   we divided the MVP into 3 "chunks" and assigned it to each person:
     1. Parse_gpx (pathname to gpx file) -> pandas dataframe
         * opens gpx file, pulls out lat, long, and time from each trkpt, and stores it in a data structure
@@ -31,12 +31,16 @@ Project Overview / Sketch out MVP:
         * Assignment : Missy & Lindsay
         * This will be the most challenging part of the project so we assigned two people to it. 
         
-Rough Timeline: 
+  Rough Timeline: 
     Donna will make a rough schedule by Monday and we'll revise or approve it on Monday.
     
-Other Notes:
+  Other Notes:
     * Donna will also make a fake-sample dataframe and send it to everyone by Monday so everyone can start their work.
     * Until monday: each person will research their work as they're waiting for Donna to send the dataframe. 
     
     
     -------------------------------------------------------------------------------------
+Monday - Oct 5th
+  Rough Timeline:
+      
+  
