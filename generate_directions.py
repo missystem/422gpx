@@ -6,14 +6,27 @@ from geopy import distance
 
 def generate_directions(frame: list) -> str:
 
-    # testing ability to read from DataFrame object
+    # test ability to read from DataFrame object
 
-    # first convert lat and long into UTM coordinates
+    # make an array of turn dictionaries
+        # dictionary fields:
+        # turn_lat (latitude of mid-point of turn)
+        # turn_long
+        # type (left, right, straight)
+        # notes ("Turn right onto Franklin")
+        # dist (distance from last turn)
+        # cum_dist (cumulative distance since start)
+    turn = {"turn_lat": frame[0]["lat"], "turn_long": frame[0]["long"],
+            "type": "Start", "notes": "Start of route", "dist": 0.0, "cum_dist": 0.0}
+    instructions = []
+    instructions.append(turn)
+
+    # convert lat and long into UTM coordinates
     # may not be necessary with geopy
 
     # calculate distance between turns
-    # rough calculate: from post-turn to pre-turn
 
+    # rough calculate experiment: from post-turn to pre-turn
     point1 = (frame[0]["lat"], frame[1]["long"])
     point2 = (frame[2]["lat"], frame[3]["long"])
     point3 = (frame[4]["lat"], frame[5]["long"])
@@ -22,8 +35,7 @@ def generate_directions(frame: list) -> str:
     distance2 = distance.distance(point2, point3)
     print("distance1: ", distance1, "distance2: ", distance2)
 
-    # first average between before and after coordinates for a turn coordinate
-    # figure distance in km from one turn coordinate to the next
+    # figure more precise distance in km from one turn coordinate to the next
     # write to dictionary
 
     # calculate direction of turn
