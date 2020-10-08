@@ -16,6 +16,7 @@ http://geoservices.tamu.edu
    
 ## Project Overview / Sketch out MVP:  
 divide MVP in 3 "chunks", assigned to each person:  
+
     1. Parse_gpx (pathname to gpx file) -> pandas dataframe
         * opens gpx file, pulls out lat, long, and time from each trkpt, and stores it in a data structure
         * python xml parser, gpxpy?, Beautiful Soup are all potentially helpful tools
@@ -30,22 +31,16 @@ divide MVP in 3 "chunks", assigned to each person:
                 *** every data point that has the same street as the one before and after it → you can eliminate it!*
             ** or could be something different, e.g. sample every 30 seconds
         * GOAL -> eliminate unnecessary points + add street names!!
-        * Assignment : Xuehai
+        * Assignment : Xuehai & Missy
         
     3. Generate_directions (filtered pandas dataframe) -> csv file
         * generates turn-by-turn directions as a text file
             ** calculates distance between each turn (UTM)
             ** determines if it's a left or right turn (or straight ahead, but the street name changed
             ** writes this information to a csv file
-        * Assignment : Missy & Lindsay
-        * This will be the most challenging part of the project so we assigned two people to it. 
+        * Assignment : Lindsay
+        * the most challenging part, other people join in after finish their own parts
         
-  Rough Timeline: 
-    Donna will make a rough schedule by Monday and we'll revise or approve it on Monday.
-    
-  Other Notes:
-    * Donna will also make a fake-sample dataframe and send it to everyone by Monday so everyone can start their work.
-    * Until monday: each person will research their work as they're waiting for Donna to send the dataframe. 
     
     
     -------------------------------------------------------------------------------------
@@ -56,12 +51,10 @@ Monday - Oct 5th
       *Parallel: Xuehai should test the code in parallel as the Quality Assurance person.
   We'll test our individual sections in Jupyter notebook and commit the python executable for that to Github to have in our records.
   Each member went trhough their progress/struggles about their part so far and cleared up any confusion.
-
-    -------------------------------------------------------------------------------------
+// --- 
 Wednesday - Oct 7th
    * Met with Professor Young and talked about the overall structure of the project and clearified some details. 
    * At each step, each module will be a python executable (.py) file and there will be a main file that will connect all 3 modules and run the program
    * Module 3 doesn't seem to be as challenging as we thought, so Missy's role is switched to a person that jumps from topics to help members who are struggling.
         * She will currently work on Module 4 with Xuehai.
    * Since we met early this week the normal meeting scheduled on Friday is canceled (unless we need to meet).
-   
