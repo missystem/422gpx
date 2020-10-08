@@ -5,5 +5,5 @@
 # ./lazy.sh
 
 pip install pandas
-pip install pgx
+pip install gpx
 pip install requests
