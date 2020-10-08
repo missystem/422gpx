@@ -7,6 +7,7 @@ https://developers.google.com/maps/documentation/geocoding/start
    
 http://geoservices.tamu.edu   
    
+---
 
 ### Group role assignments:   
 * Missy - Repo Master : Clean repo and make sure things are structured nice
@@ -14,6 +15,8 @@ http://geoservices.tamu.edu
 * Donna - Documentation Boss / Schedule : Make sure everything is on track and document meetings and project
 * Xuehai - Quality Assurance : Test code and modules to make sure all is running smoothly
    
+---
+
 ## Project Overview / Sketch out MVP:  
 divide MVP in 3 "chunks", assigned to each person:  
 
@@ -41,7 +44,6 @@ divide MVP in 3 "chunks", assigned to each person:
         * Assignment : Lindsay
         * the most challenging part, other people join in after finish their own parts
         
-    
     
 ---
   
