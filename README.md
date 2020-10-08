@@ -1,23 +1,21 @@
 # 422 Group
 
-## meeting time    
-Saturday noon (Oct 3rd)    
+## meeting time   
 Monday 4-6pm     
 Friday 4-6pm     
 https://developers.google.com/maps/documentation/geocoding/start   
-    
+   
 http://geoservices.tamu.edu   
    
 
- Saturday - Oct 3rd
- ### Group role assignments:   
- * Missy - Repo Master : Clean repo and make sure things are structured nice
- * Lindsay - Build Master / Architect : Overall build plan and design
- * Donna - Documentation Boss / Schedule : Make sure everything is on track and document meetings and project
- * Xuehai - Quality Assurance : Test code and modules to make sure all is running smoothly
-
- Project Overview / Sketch out MVP:
-  we divided the MVP into 3 "chunks" and assigned it to each person:
+### Group role assignments:   
+* Missy - Repo Master : Clean repo and make sure things are structured nice
+* Lindsay - Build Master / Architect : Overall build plan and design
+* Donna - Documentation Boss / Schedule : Make sure everything is on track and document meetings and project
+* Xuehai - Quality Assurance : Test code and modules to make sure all is running smoothly
+   
+## Project Overview / Sketch out MVP:  
+divide MVP in 3 "chunks", assigned to each person:  
     1. Parse_gpx (pathname to gpx file) -> pandas dataframe
         * opens gpx file, pulls out lat, long, and time from each trkpt, and stores it in a data structure
         * python xml parser, gpxpy?, Beautiful Soup are all potentially helpful tools
