@@ -10,11 +10,11 @@ http://geoservices.tamu.edu
    
 
  Saturday - Oct 3rd
- Group role assignments:   
-    * Missy - Repo Master : Clean repo and make sure things are structured nice
-    * Lindsay - Build Master / Architect : Overall build plan and design
-    * Donna - Documentation Boss / Schedule : Make sure everything is on track and document meetings and project
-    * Xuehai - Quality Assurance : Test code and modules to make sure all is running smoothly
+ ### Group role assignments:   
+ * Missy - Repo Master : Clean repo and make sure things are structured nice
+ * Lindsay - Build Master / Architect : Overall build plan and design
+ * Donna - Documentation Boss / Schedule : Make sure everything is on track and document meetings and project
+ * Xuehai - Quality Assurance : Test code and modules to make sure all is running smoothly
 
  Project Overview / Sketch out MVP:
   we divided the MVP into 3 "chunks" and assigned it to each person:
