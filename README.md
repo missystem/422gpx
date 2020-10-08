@@ -43,17 +43,20 @@ divide MVP in 3 "chunks", assigned to each person:
         
     
     
-    -------------------------------------------------------------------------------------
-Monday - Oct 5th  
+---
+  
+### Monday - Oct 5th  
   Rough Timeline:  
     Oct 12th --> Deadline for Donna and Xuehai  
     Ocr 21st --> Deadline for Missy and Lindsay  
    * Parallel: Xuehai should test the code in parallel as the Quality Assurance person.  
     We'll test our individual sections in Jupyter notebook and commit the python executable for that to Github to have in our records.  
     Each member went trhough their progress/struggles about their part so far and cleared up any confusion.    
-
-Wednesday - Oct 7th
-   * Met with Professor Young and talked about the overall structure of the project and clearified some details. 
+  
+---
+  
+### Wednesday - Oct 7th  
+   * Meeting with Prof.Young and talked about the overall structure of the project and clarified some details. 
    * At each step, each module will be a python executable (.py) file and there will be a main file that will connect all 3 modules and run the program
    * Module 3 doesn't seem to be as challenging as we thought, so Missy's role is switched to a person that jumps from topics to help members who are struggling.
         * She will currently work on Module 4 with Xuehai.
