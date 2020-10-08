@@ -23,6 +23,9 @@ def GenDataFrames():
 
 	return DataFrame2
 
-main():
+def main():
 	GenDataFrames()
 	return 0
+
+if __name__ == "__main__":
+	main()

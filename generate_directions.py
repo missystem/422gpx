@@ -2,6 +2,7 @@
 
 # import pandas
 from geopy import distance
+from FakeDataFrames import GenDataFrames
 
 
 def generate_directions(frame: list) -> str:
@@ -9,15 +10,16 @@ def generate_directions(frame: list) -> str:
     # test ability to read from DataFrame object
 
     # make an array of turn dictionaries
+    # keep original DataFrame and modify as needed
         # dictionary fields:
         # turn_lat (latitude of mid-point of turn)
         # turn_long
+        # street
         # type (left, right, straight)
         # notes ("Turn right onto Franklin")
-        # dist (distance from last turn)
         # cum_dist (cumulative distance since start)
     turn = {"turn_lat": frame[0]["lat"], "turn_long": frame[0]["long"],
-            "type": "Start", "notes": "Start of route", "dist": 0.0, "cum_dist": 0.0}
+            "type": "Start", "notes": "Start of route", "cum_dist": 0.0}
     instructions = []
     instructions.append(turn)
 
@@ -69,7 +71,8 @@ def make_data():
 
 
 def main():
-    # dataFrame = FakeDataFrames()
+    dataFrame = GenDataFrames()
+    print(dataFrame)
     dataPoints = make_data()
     generate_directions(dataPoints)
 
