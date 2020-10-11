@@ -40,7 +40,8 @@ def GpxParse(gpx_filename: str):
 
     columns = ['Longitude', 'Latitude', 'Altitude', 'Time', 'Speed']
     df = pd.DataFrame(data, columns=columns)
-    df.head()
+    df = df.drop(['Altitude', 'Time', 'Speed'], axis = 1S)
+    #df.head()
     return df
 
 
@@ -50,7 +51,7 @@ def GpxParse(gpx_filename: str):
 def main():
     name = "09_27_20.gpx"
     dataframe = GpxParse(name)
-    dataframe.head()
+    #dataframe.head()
     
 
 
@@ -59,21 +60,6 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
-
-# In[32]:
-
-
-dataframe = GpxParse("09_27_20.gpx")
-
-
-# In[33]:
-
-
-dataframe.head()
-
-
-# In[ ]:
 
 
 
