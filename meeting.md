@@ -63,3 +63,17 @@ divide MVP in 3 "chunks", assigned to each person:
    * Module 3 doesn't seem to be as challenging as we thought, so Missy's role is switched to a person that jumps from topics to help members who are struggling.
         * She will currently work on Module 4 with Xuehai.
    * Friday meeting is canceled (unless we need to meet)
+  
+---
+  
+### Moday - Oct 12th  
+   * UPDATES: 
+         * Donna finished her assignment and will now go around helping people especially in regards to Pandas.
+         * Xuehai and Missy have finished the psuedocode and you'retesting the actual code.
+         * Lindsay Has algorithms and ideas about the project and will work on them this week.
+               * Lindsay spoke with Donna and got an approval for the algorithms! 
+   * GOALS:
+         * Xuehai and Missy have a meeting with Michal and will finish their part by the end of the week.
+         * Donna will help everyone with pandas. 
+         * Lindsay will work on the project until Wednesday and we'll decide what the next steps are as a team
+         
