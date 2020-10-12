@@ -2,7 +2,7 @@
 
 ## meeting time   
 Monday 4-6pm     
-Friday 4-6pm     
+Friday 5-7pm     
 https://developers.google.com/maps/documentation/geocoding/start   
    
 http://geoservices.tamu.edu   
