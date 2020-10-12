@@ -40,7 +40,7 @@ def GpxParse(gpx_filename: str):
 
     columns = ['Longitude', 'Latitude', 'Altitude', 'Time', 'Speed']
     df = pd.DataFrame(data, columns=columns)
-    df = df.drop(['Altitude', 'Time', 'Speed'], axis = 1S)
+    df = df.drop(['Altitude', 'Time', 'Speed'], axis = 1)
     #df.head()
     return df
 
