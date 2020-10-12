@@ -67,13 +67,13 @@ divide MVP in 3 "chunks", assigned to each person:
 ---
   
 ### Moday - Oct 12th  
-   * UPDATES: 
-         * Donna finished her assignment and will now go around helping people especially in regards to Pandas.
-         * Xuehai and Missy have finished the psuedocode and you'retesting the actual code.
-         * Lindsay Has algorithms and ideas about the project and will work on them this week.
-               * Lindsay spoke with Donna and got an approval for the algorithms! 
-   * GOALS:
-         * Xuehai and Missy have a meeting with Michal and will finish their part by the end of the week.
-         * Donna will help everyone with pandas. 
-         * Lindsay will work on the project until Wednesday and we'll decide what the next steps are as a team
+* UPDATES: 
+  - Donna finished her assignment and will now go around helping people especially in regards to Pandas.
+  - Xuehai and Missy have finished the psuedocode and you'retesting the actual code.
+  - Lindsay Has algorithms and ideas about the project and will work on them this week.
+  - Lindsay spoke with Donna and got an approval for the algorithms! 
+* GOALS:
+  - Xuehai and Missy have a meeting with Michal and will finish their part by the end of the week.
+  - Donna will help everyone with pandas. 
+  - Lindsay will work on the project until Wednesday and we'll decide what the next steps are as a team
          
