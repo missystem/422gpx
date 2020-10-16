@@ -91,6 +91,7 @@ def generate_directions(dataframe):
     dataframe = dataframe[dataframe.Street != ""].copy()
     dataframe = dataframe[dataframe.Turn != ""].copy()
     dataframe.Street = dataframe.Street.shift(-1)
+    dataframe.Distance = dataframe.Distance.round(decimals=1)
     dataframe = dataframe.reset_index(drop=True)
 
     #  compose string with directions for each turn
