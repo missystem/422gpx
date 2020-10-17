@@ -97,6 +97,7 @@ divide MVP in 3 "chunks", assigned to each person:
    *  Goals for next week:
       - finish street lookup by Monday - Missy and Xuehai
       - Hosting on github (Missy will be the github Shifu)
+      - Lindsay will make a skeleton code that puts things together.
       - Figure out if we need to use Flask - Donna will ask on piazza
       - write html/css and maybe js for website - Lindsay can start on Wednesday afternoon
       
