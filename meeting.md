@@ -110,8 +110,8 @@ divide MVP in 3 "chunks", assigned to each person:
    - Linday has uploaded a placeholder-html file. She mentioned we might not be able to use github to launch the website. 
          - We will have to use flask.
 * PLAN:
-      - Needed things:
-         -Backend:
+   - Needed things:
+         - Backend:
             - Fix module 2 and post on github: Xuehai
             - Testing : Xuehai (Quality assurance) 
          - Frontend:
