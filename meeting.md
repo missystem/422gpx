@@ -120,5 +120,8 @@ divide MVP in 3 "chunks", assigned to each person:
         - Learn Flask and how to use it: **Donna & Missy** 
         - html & css & java script: **Lindsay**
         - Hosting: **Lindsay**
-        - Documentation: **Donna**
-
+        - Documentation: **Donna**  
+  
+Wednesday:   
+* 12pm - 1pm  
+* 4pm - 6pm short meeting
