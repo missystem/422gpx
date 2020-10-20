@@ -3,10 +3,15 @@
 
 ## DUE TIME: OCT 23, 17:00
 
-## meeting time   
-Monday 4-6pm     
-Friday 5-7pm   
+## Weekly meeting schedule   
+* Monday 4-6pm     
+* Friday 5-7pm   
   
+
+### Wednesday(Oct 21, 2020) Short Meeting:  
+* 12pm - 1pm  
+* 4pm - 6pm 
+
 ---
 
 ### Group role assignments:   
@@ -121,7 +126,3 @@ divide MVP in 3 "chunks", assigned to each person:
         - html & css & java script: **Lindsay**
         - Hosting: **Lindsay**
         - Documentation: **Donna**  
-  
-Wednesday (short meeting):  
-* 12pm - 1pm  
-* 4pm - 6pm 
