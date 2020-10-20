@@ -1,5 +1,4 @@
 # 422 Group Project 1   
-* [Project description](https://uo-cis422.github.io/chapters/projects/reverse/reverse.html)
 
 ## DUE TIME: OCT 23, 17:00
 
@@ -31,6 +30,7 @@
 ---
 
 ## Project Overview / Sketch out MVP:  
+* [Project description](https://uo-cis422.github.io/chapters/projects/reverse/reverse.html)   
 divide MVP in 3 "chunks", assigned to each person:  
 
     1. Parse_gpx (pathname to gpx file) -> pandas dataframe
