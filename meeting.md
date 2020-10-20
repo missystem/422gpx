@@ -78,30 +78,32 @@ divide MVP in 3 "chunks", assigned to each person:
   - Lindsay will work on the project until Wednesday and we'll decide what the next steps are as a team
          
 ---
+
 ### Friday - Oct 16th
-   * UPDATES: 
+  * UPDATES: 
       - Donna's update: Research in HTMl and Using visual maps to show the route to make a more interesting UI. Also started working on the user documentation, but will work on it more when we discuss it in more detail and set clear expectations. 
-      - Xuehai and Missy: Main function is down but their debugging now.
+      - Xuehai and Missy: Main function is down but their debugging now.  
                           Also talk about the user documentation to show progress while the API is fetching things.
-      - Lindsay: Third moduel is done. She demostrated how it works. 
+      - Lindsay: Third module is done. She demonstrated how it works.   
                  Lindsay and Donna met over the week and decided to keep all data points in the second module, so module two will not be filtering the dataframe.
-   * Plan for putting things together:
-      - Lindsay showed ehr ideal input and Missy and Xuehai are arranging their output to look like that. Donna will be "on call" to help with any pandas issues if needed.
+  * Plan for putting things together:
+      - Lindsay showed her ideal input and Missy and Xuehai are arranging their output to look like that. Donna will be "on call" to help with any pandas issues if needed.
       - for the final product the Skeleton.py file is going to be the "main" back end file, which will call upon all other files. 
-   * Discuss use casses & plan deployment:
-            - If we can finish draft 1 by Tuesday we can try to upgrade. If not we stick with that one.
-                  - either have an html website that shows the table.
-                  - or have an html website that lets the user download the csv file.
-                  - worse case, we make a bash interface.
-                  - Host website on github.
-   *  Goals for next week:
-      - finish street lookup by Monday - Missy and Xuehai
-      - Hosting on github (Missy will be the github Shifu)
+  * Discuss use casses & plan deployment:
+      - If we can finish draft 1 by Tuesday we can try to upgrade. If not we stick with that one.
+          - either have an html website that shows the table.
+          - or have an html website that lets the user download the csv file.
+          - worse case, we make a bash interface.
+          - Host website on github.
+  *  Goals for next week:
+      - Finish street lookup by Monday - Missy & Xuehai
+      - Hosting on github (Missy will be the Github Shifu)
       - Lindsay will make a skeleton code that puts things together.
       - Figure out if we need to use Flask - Donna will ask on piazza
       - write html/css and maybe js for website - Lindsay can start on Wednesday afternoon
       
 ---
+
 ### Monday - Oct 19th      
 * UPDATES:
   - Donna and the logs: Developer log and developer documentation are done (need to talk to module 2 folks about some features)
