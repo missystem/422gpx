@@ -3,6 +3,7 @@ import pandas  # for, like, everything!
 from geopy import distance  # for distance calculation
 from GpxParser import GpxParse
 from generate_directions import generate_directions
+from addressLookup import *
 import datetime
 import time
 import gpxpy
@@ -18,9 +19,10 @@ def main():
     dataFrame = GpxParse("Morning_Ride.gpx")
 
     # lookup street name for each data point
+    lookedup = binarySearch(dataframe)
     # for a contiguous series of data points with the same street, eliminate all but the first and last
     # return the revised pandas DataFrame
-    filtered = filter_data(dataframe)
+    filtered = df_cleanup(lookedup)
 
     # figure cumulative distance from turn to turn
     # determine direction of turn (left or right)
