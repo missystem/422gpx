@@ -1,0 +1,73 @@
+/* 
+ * Styles for reverse geocoding web app 
+ */
+
+ /*
+    color palette:
+    background: C8C2AE "bone"
+    text: 2B4141 "dark slate gray"
+    buttons: 0EB1D2 "pacific blue"
+ */
+
+ /* global settings ------------------------- */
+
+ /* boiler-plate box-sizing fix */
+ html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+head {
+    font-family: "Avant Garde", Avantgarde, CenturyGothic, sans-serif;
+}
+
+/* header section ------------------------------ */
+
+header {
+    font-family: "Avant Garde", Avantgarde, CenturyGothic, sans-serif;
+}
+
+header h1 {
+    font-weight: 900;
+}
+
+header h2 {
+    font-weight: 200;
+}
+
+header h1, header h2 {
+    background: #C8C2AE;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* body section ----------------------------------- */
+
+body {
+    font-family: "Avant Garde", Avantgarde, CenturyGothic, sans-serif;
+    background-color: #C8C2AE;
+    color: #2B4141
+    padding-left: 10%; 
+    padding-right: 2%;
+}
+
+.text-title {
+    text-align: center;
+}
+
+h1, h2, h3 { 
+    font-family: "Avant Garde", Avantgarde, CenturyGothic, sans-serif;
+}
+
+em {
+    font-weight: 600;
+}
+
+footer {
+    font-size: .8em;
+    font-style: italic;
+}
