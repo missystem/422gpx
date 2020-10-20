@@ -104,19 +104,19 @@ divide MVP in 3 "chunks", assigned to each person:
 ---
 ### Monday - Oct 19th      
 * UPDATES:
-   - Donna and the logs: Developer log and developer documentation are done (need to talk to module 2 folks about some features)
-   - Xuehai and Missy present thier work and finished module. Now we focus on "connecting" module 2 to moduel 3.
-         - Module 2 must tidy-up the dataframe adn street names.
-   - Linday has uploaded a placeholder-html file. She mentioned we might not be able to use github to launch the website. 
-         - We will have to use flask.
+  - Donna and the logs: Developer log and developer documentation are done (need to talk to module 2 folks about some features)
+  - Xuehai and Missy present thier work and finished module. Now we focus on "connecting" module 2 to moduel 3.
+    - Module 2 must tidy-up the dataframe adn street names.
+  - Linday has uploaded a placeholder-html file. She mentioned we might not be able to use github to launch the website. 
+    - We will have to use flask.
 * PLAN:
-   - Needed things:
-         - Backend:
-            - Fix module 2 and post on github: Xuehai
-            - Testing : Xuehai (Quality assurance) 
-         - Frontend:
-            - Learn Flask and how to use it: Donna & Missy 
-            - html and css and java script: Lindsay
-            - hosting: Lindsay
-            - Documentation: Donna 
+  - Needed things:
+    - Backend:
+      - Fix module 2 and post on github: Xuehai
+      - Testing : Xuehai (Quality assurance) 
+    - Frontend:
+      - Learn Flask and how to use it: Donna & Missy 
+      - html and css and java script: Lindsay
+      - hosting: Lindsay
+      - Documentation: Donna 
 
