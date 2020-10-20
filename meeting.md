@@ -1,12 +1,12 @@
-# 422 Group
+# 422 Group Project 1   
+* [Project description](https://uo-cis422.github.io/chapters/projects/reverse/reverse.html)
+
+## DUE TIME: OCT 23, 17:00
 
 ## meeting time   
 Monday 4-6pm     
 Friday 5-7pm   
-   
-https://developers.google.com/maps/documentation/geocoding/start   
-http://geoservices.tamu.edu   
-   
+  
 ---
 
 ### Group role assignments:   
@@ -50,7 +50,7 @@ divide MVP in 3 "chunks", assigned to each person:
 ### Monday - Oct 5th  
   Rough Timeline:  
     Oct 12th --> Deadline for Donna and Xuehai  
-    Ocr 21st --> Deadline for Missy and Lindsay  
+    Oct 21st --> Deadline for Missy and Lindsay  
    * Parallel: Xuehai should test the code in parallel as the Quality Assurance person.  
     We'll test our individual sections in Jupyter notebook and commit the python executable for that to Github to have in our records.  
     Each member went trhough their progress/struggles about their part so far and cleared up any confusion.    
@@ -66,7 +66,7 @@ divide MVP in 3 "chunks", assigned to each person:
   
 ---
   
-### Moday - Oct 12th  
+### Monday - Oct 12th  
 * UPDATES: 
   - Donna finished her assignment and will now go around helping people especially in regards to Pandas.
   - Xuehai and Missy have finished the psuedocode and you'retesting the actual code.
