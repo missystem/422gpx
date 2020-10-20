@@ -116,19 +116,15 @@ def binarySearch(df):
     
     # base case
     if len(df) <= 2 and start_address != end_address:
-        print("<= 2, I'm returning")
         for index, item in df.iterrows():
             row, col, streetAddress = item
             l = [row, col]
             turn_pts.append(l)
-        print("turning points:", turn_pts)
         return None
     
     elif start_address == mid_address and mid_address == end_address:
         
-        if local_end - local_start < 80:  # 
-            print("I'm returning...")
-            print("turning points:", turn_pts)
+        if local_end - local_start < 80:  # safe interval can be vary
             return None
         else:
             binarySearch(df.iloc[local_start:local_mid])
@@ -139,6 +135,24 @@ def binarySearch(df):
         binarySearch(df.iloc[local_mid:])
 
 
+# In[4]:
+
+
+def df_cleanup(df):
+    df_len = len(df)
+    buffer = df.iloc[0]['streetName']
+    for i in range(1, df_len):
+        if i == df_len - 1:
+            break
+        if df.iloc[i]['streetName'] == buffer and df.iloc[i+1]['streetName'] != "" and df.iloc[i+1]['streetName'] != buffer:
+            buffer2 = df.iloc[i+1]['streetName']
+        elif df.iloc[i]['streetName'] != buffer and df.iloc[i]['streetName'] != "":
+            buffer = buffer2
+        else:
+            df.at[i, 'streetName'] = ""
+    return df
+
+
 # In[ ]:
 
 
@@ -146,6 +160,7 @@ def main(DataFrame2):
     DataFrame2["streetName"]=""
     turn_pts = list()
     binarySearch(DataFrame2)
+    df_cleanup(DataFrame2)
     return DataFrame2
 
 if __name__ == "__main__":
