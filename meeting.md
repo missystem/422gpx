@@ -112,11 +112,11 @@ divide MVP in 3 "chunks", assigned to each person:
 * PLAN:
   - Things are needed:
     1. Back-end:
-      - Fix module 2 and post on github: **Xuehai**
-      - Testing : **Xuehai** (Quality assurance) 
+        - Fix module 2 and post on github: **Xuehai**
+        - Testing : **Xuehai** (Quality assurance) 
     2. Front-end:
-      - Learn Flask and how to use it: **Donna & Missy** 
-      - html & css & java script: **Lindsay**
-      - Hosting: **Lindsay**
-      - Documentation: **Donna**
+        - Learn Flask and how to use it: **Donna & Missy** 
+        - html & css & java script: **Lindsay**
+        - Hosting: **Lindsay**
+        - Documentation: **Donna**
 
