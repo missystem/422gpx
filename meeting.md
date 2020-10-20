@@ -3,15 +3,23 @@
 
 ## DUE TIME: OCT 23, 17:00
 
-## Weekly meeting schedule   
+## Weekly meeting time   
 * Monday 4-6pm     
 * Friday 5-7pm   
-  
 
 ### Wednesday(Oct 21, 2020) Short Meeting:  
 * 12pm - 1pm  
 * 4pm - 6pm 
 
+---
+   
+## Meeting Overview:
+1. [Monday - Oct 5th](https://github.com/missystem/422gpx/blob/main/meeting.md#monday---oct-5th)
+2. [Wednesday - Oct 7th](https://github.com/missystem/422gpx/blob/main/meeting.md#wednesday---oct-7th)
+3. [Monday - Oct 12th](https://github.com/missystem/422gpx/blob/main/meeting.md#monday---oct-12th)
+4. [Friday - Oct 16th](https://github.com/missystem/422gpx/blob/main/meeting.md#friday---oct-16th)
+5. [Monday - Oct 19th](https://github.com/missystem/422gpx/blob/main/meeting.md#monday---oct-19th)
+   
 ---
 
 ### Group role assignments:   
@@ -59,7 +67,6 @@ divide MVP in 3 "chunks", assigned to each person:
    * Parallel: Xuehai should test the code in parallel as the Quality Assurance person.  
     We'll test our individual sections in Jupyter notebook and commit the python executable for that to Github to have in our records.  
     Each member went trhough their progress/struggles about their part so far and cleared up any confusion.    
-  
 ---
   
 ### Wednesday - Oct 7th  
