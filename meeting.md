@@ -105,13 +105,13 @@ divide MVP in 3 "chunks", assigned to each person:
 ---
 
 ### Monday - Oct 19th      
-* UPDATES:
+* **UPDATES**:
   - Donna and the logs: Developer log and developer documentation are done (need to talk to module 2 folks about some features)
   - Xuehai and Missy present their work and finished module. Now we focus on "connecting" module 2 to moduel 3.
     - Module 2 must tidy-up the dataframe and street names.
   - Linday has uploaded a placeholder-html file. She mentioned we might not be able to use github to launch the website. 
     - We will have to use flask.
-* PLAN:
+* **PLAN**:
   - Things are needed:
     1. Back-end:
         - Fix module 2 and post on github: **Xuehai**
@@ -122,6 +122,6 @@ divide MVP in 3 "chunks", assigned to each person:
         - Hosting: **Lindsay**
         - Documentation: **Donna**  
   
-Wednesday:   
+Wednesday (short meeting):  
 * 12pm - 1pm  
-* 4pm - 6pm short meeting
+* 4pm - 6pm 
