@@ -35,9 +35,10 @@ def generate_directions(dataframe):
     dataframe["Distance"] = cumul_distance
 
     # temporary kludge to add street names for module develoment, specific to morning_ride.gpx
-    hardcode = ["Hayes", "", "", "", "", "", "", "", "", "", "", "Hayes", "18th", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "18th", "Chambers", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "Chambers", "14th", "", "", "", "", "", "", "", "", "", "", "",
-                "", "", "14th", "Tyler", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "Tyler", "5th", "", "", "", "", "", "", "", "", "", "5th", "Blair", "", "", "Blair"]
-    dataframe["Street"] = hardcode
+    # hardcode = ["Hayes", "", "", "", "", "", "", "", "", "", "", "Hayes", "18th", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "18th", "Chambers", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "Chambers", "14th", "", "", "", "", "", "", "", "", "", "", "",
+    #             "", "", "14th", "Tyler", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "Tyler", "5th", "", "", "", "", "", "", "", "", "", "5th", "Blair", "", "", "Blair"]
+    # dataframe["Street"] = hardcode
+    # print(dataframe)
 
     # calculate direction of turn
     turn = [""]*num_points
@@ -135,6 +136,7 @@ def get_bearing(lat1, lon1, lat2, lon2):
 
 def main():
     dataFrame = GpxParse("Morning_Ride.gpx")
+    # dataFrame = add_streets(dataFrame)
     cue_sheet = generate_directions(dataFrame)
 
 
