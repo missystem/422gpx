@@ -13,14 +13,11 @@ import numpy as np  # for bearings calculation
 
 def generate_directions(dataframe):
     """Generates a CSV file that serves as a cue sheet
-
     Args:
-        dataframe is a pandas DataFrame 
+        dataframe is a pandas DataFrame
         Each datapoint (row) has latitude and longitude, plus street name for the point immediately before and immediately after a turn (street change)
-
     Returns:
         my_cue_sheet.csv has columns for turn (start, right, left, straight, end), cumulative distance from start, and turn-by-turn directions
-
     Todo: remove lines 37-40, hardcoded street names for sample dataframe
     """
 
