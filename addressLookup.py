@@ -14,17 +14,14 @@ import json
 # In[2]:
 
 
-def get_address(df, index, global_index, one_or_zero):
+def get_address(df, api_key, index, global_index, one_or_zero):
     df_len = len(df)
-    for i in range(df_len):
-        print(df.index[i])
-    print()
     lon = df.iloc[index][0]
     lat = df.iloc[index][1]
     web_input = {'lon':str(lon), 
                   'lat':str(lat), 
                   'state':"or", 
-                  'apikey':"68971949e5f24edba97fb29083c1a604", 
+                  'apikey': str(api_key),
                  'format':"json",
                  'notStore':"false",
                  'version':"4.10"}
@@ -42,7 +39,7 @@ def get_address(df, index, global_index, one_or_zero):
             web_input = {'lon':str(lon), 
                       'lat':str(lat), 
                       'state':"or", 
-                      'apikey':"68971949e5f24edba97fb29083c1a604", 
+                      'apikey': str(api_key),
                      'format':"json",
                      'notStore':"false",
                      'version':"4.10"}
@@ -59,7 +56,7 @@ def get_address(df, index, global_index, one_or_zero):
             web_input = {'lon':str(lon), 
                       'lat':str(lat), 
                       'state':"or", 
-                      'apikey':"68971949e5f24edba97fb29083c1a604", 
+                      'apikey': str(api_key),
                      'format':"json",
                      'notStore':"false",
                      'version':"4.10"}
@@ -78,7 +75,7 @@ def get_address(df, index, global_index, one_or_zero):
 
 
 
-def binarySearch(df):
+def binarySearch(df, api_key):
     start = df.index[0]
     end = df.index[-1]
     mid = math.ceil((start + end) / 2)
@@ -88,19 +85,19 @@ def binarySearch(df):
     local_mid = math.ceil((local_start + local_end) / 2)
     # find start point address
     if dataFrame.iloc[start]['streetName'] == "":
-        local_start, start_address = get_address(df, local_start, start, 1)    
+        local_start, start_address = get_address(df, api_key, local_start, start, 1)
     else:
         start_address = dataFrame.iloc[start]['streetName']
     
     # find mid point address 
     if dataFrame.iloc[mid]['streetName'] == "":
-        local_mid, mid_address = get_address(df, local_mid, mid, 1)
+        local_mid, mid_address = get_address(df, api_key, local_mid, mid, 1)
     else:
         mid_address = dataFrame.iloc[mid]['streetName']
     
     # find end point address 
     if dataFrame.iloc[end]['streetName'] == "":
-        local_end, end_address = get_address(df, local_end, end, 0)
+        local_end, end_address = get_address(df, api_key, local_end, end, 0)
     else:
         end_address = dataFrame.iloc[end]['streetName']
     
@@ -117,12 +114,12 @@ def binarySearch(df):
         if local_end - local_start < 80:  # safe interval can be vary
             return None
         else:
-            binarySearch(df.iloc[local_start:local_mid])
-            binarySearch(df.iloc[local_mid:])
+            binarySearch(df.iloc[local_start:local_mid], api_key)
+            binarySearch(df.iloc[local_mid:], api_key)
             
     else:
-        binarySearch(df.iloc[local_start:local_mid+1])
-        binarySearch(df.iloc[local_mid:])
+        binarySearch(df.iloc[local_start:local_mid+1], api_key)
+        binarySearch(df.iloc[local_mid:], api_key)
 
 
 # In[4]:
@@ -146,10 +143,10 @@ def df_cleanup(df):
 # In[ ]:
 
 
-def main(dataFrame):
+def main(dataFrame, api_key):
     dataFrame["streetName"]=""
     # turn_pts = list()
-    binarySearch(dataFrame)
+    binarySearch(dataFrame, api_key)
     df_cleanup(dataFrame)
     return dataFrame
 

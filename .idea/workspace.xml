@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae5cecae-8640-4fbc-9e2c-4fee03eada7c" name="Default Changelist" comment="">
+    <list default="true" id="d70d26e3-fb0d-40e9-8342-cb9e06ac125f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressLookup.py" beforeDir="false" afterPath="$PROJECT_DIR$/addressLookup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton.py" afterDir="false" />
     </list>

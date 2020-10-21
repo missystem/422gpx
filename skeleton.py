@@ -12,7 +12,7 @@ import math  # for bearings calculation
 import numpy as np  # for bearings calculation
 
 
-def main():
+def main(api_key):
     # start with a gpx we want to generate directions from
     # extract lat and long
     # return a pandas DataFrame
@@ -23,7 +23,7 @@ def main():
     # binary search highly rely on correct index
     dataFrame = dataFrame.reset_index(drop=True)
     # lookup street name for each data point
-    lookedup = binarySearch(dataFrame)
+    lookedup = binarySearch(dataFrame, api_key)
     # for a contiguous series of data points with the same street, eliminate all but the first and last
     # return the revised pandas DataFrame
     filtered = df_cleanup(lookedup)
