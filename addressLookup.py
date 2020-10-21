@@ -5,6 +5,7 @@
 
 
 import pandas as pd
+from skeleton import main
 import requests
 import math
 import json
@@ -14,7 +15,7 @@ import json
 # In[2]:
 
 
-def get_address(df, api_key, index, global_index, one_or_zero):
+def get_address(df, dataFrame, api_key, index, global_index, one_or_zero):
     df_len = len(df)
     lon = df.iloc[index][0]
     lat = df.iloc[index][1]
@@ -31,7 +32,7 @@ def get_address(df, api_key, index, global_index, one_or_zero):
     idx_cp = index
     if one_or_zero == 1:
         while json_read['QueryStatusCode'] != "Success":
-            dataFrame.at[global_index,'streetName'] = "Not Available" # global
+            dataFrame.at[global_index,'Street'] = "Not Available" # global
             global_index += 1
             idx_cp = idx_cp + 1
             lon = df.iloc[idx_cp][0]
@@ -48,7 +49,7 @@ def get_address(df, api_key, index, global_index, one_or_zero):
             json_read = json.loads(website.content)
     else:
         while json_read['QueryStatusCode'] != "Success":
-            dataFrame.at[global_index,'streetName'] = "Not Available" # global
+            dataFrame.at[global_index,'Street'] = "Not Available" # global
             global_index -= 1
             idx_cp = idx_cp - 1 
             lon = df.iloc[idx_cp][0]
@@ -65,17 +66,17 @@ def get_address(df, api_key, index, global_index, one_or_zero):
             json_read = json.loads(website.content)
     address = str(json_read['StreetAddresses'][0]['StreetAddress'])
     address_list = address.split(' ', 1) 
-    streetName = address_list[1]
-    streetName = streetName.strip()
-    dataFrame.at[global_index,'streetName'] = streetName # global
-    return idx_cp, streetName
+    Street = address_list[1]
+    Street = Street.strip()
+    dataFrame.at[global_index, 'Street'] = Street # global
+    return idx_cp, Street
 
 
 # In[3]:
 
 
 
-def binarySearch(df, api_key):
+def binarySearch(df, dataFrame, api_key):
     start = df.index[0]
     end = df.index[-1]
     mid = math.ceil((start + end) / 2)
@@ -84,22 +85,22 @@ def binarySearch(df, api_key):
     local_end = len(df) - 1
     local_mid = math.ceil((local_start + local_end) / 2)
     # find start point address
-    if dataFrame.iloc[start]['streetName'] == "":
-        local_start, start_address = get_address(df, api_key, local_start, start, 1)
+    if dataFrame.iloc[start]['Street'] == "":
+        local_start, start_address = get_address(df, dataFrame, api_key, local_start, start, 1)
     else:
-        start_address = dataFrame.iloc[start]['streetName']
+        start_address = dataFrame.iloc[start]['Street']
     
     # find mid point address 
-    if dataFrame.iloc[mid]['streetName'] == "":
-        local_mid, mid_address = get_address(df, api_key, local_mid, mid, 1)
+    if dataFrame.iloc[mid]['Street'] == "":
+        local_mid, mid_address = get_address(df, dataFrame, api_key, local_mid, mid, 1)
     else:
-        mid_address = dataFrame.iloc[mid]['streetName']
+        mid_address = dataFrame.iloc[mid]['Street']
     
     # find end point address 
-    if dataFrame.iloc[end]['streetName'] == "":
-        local_end, end_address = get_address(df, api_key, local_end, end, 0)
+    if dataFrame.iloc[end]['Street'] == "":
+        local_end, end_address = get_address(df, dataFrame, api_key, local_end, end, 0)
     else:
-        end_address = dataFrame.iloc[end]['streetName']
+        end_address = dataFrame.iloc[end]['Street']
     
     # base case
     if len(df) <= 2 and start_address != end_address:
@@ -111,15 +112,15 @@ def binarySearch(df, api_key):
     
     elif start_address == mid_address and mid_address == end_address:
         
-        if local_end - local_start < 80:  # safe interval can be vary
+        if local_end - local_start < 20:  # safe interval can be vary
             return None
         else:
-            binarySearch(df.iloc[local_start:local_mid], api_key)
-            binarySearch(df.iloc[local_mid:], api_key)
+            binarySearch(df.iloc[local_start:local_mid], dataFrame, api_key)
+            binarySearch(df.iloc[local_mid:], dataFrame, api_key)
             
     else:
-        binarySearch(df.iloc[local_start:local_mid+1], api_key)
-        binarySearch(df.iloc[local_mid:], api_key)
+        binarySearch(df.iloc[local_start:local_mid+1], dataFrame, api_key)
+        binarySearch(df.iloc[local_mid:], dataFrame, api_key)
 
 
 # In[4]:
@@ -127,16 +128,16 @@ def binarySearch(df, api_key):
 
 def df_cleanup(df):
     df_len = len(df)
-    buffer = df.iloc[0]['streetName']
+    buffer = df.iloc[0]['Street']
     for i in range(1, df_len):
         if i == df_len - 1:
             break
-        if df.iloc[i]['streetName'] == buffer and df.iloc[i+1]['streetName'] != "" and df.iloc[i+1]['streetName'] != buffer:
-            buffer2 = df.iloc[i+1]['streetName']
-        elif df.iloc[i]['streetName'] != buffer and df.iloc[i]['streetName'] != "":
+        if df.iloc[i]['Street'] == buffer and df.iloc[i+1]['Street'] != "" and df.iloc[i+1]['Street'] != buffer:
+            buffer2 = df.iloc[i+1]['Street']
+        elif df.iloc[i]['Street'] != buffer and df.iloc[i]['Street'] != "":
             buffer = buffer2
         else:
-            df.at[i, 'streetName'] = ""
+            df.at[i, 'Street'] = ""
     return df
 
 
@@ -144,9 +145,9 @@ def df_cleanup(df):
 
 
 def main(dataFrame, api_key):
-    dataFrame["streetName"]=""
+    dataFrame["Street"]=""
     # turn_pts = list()
-    binarySearch(dataFrame, api_key)
+    binarySearch(dataFrame, dataFrame, api_key)
     df_cleanup(dataFrame)
     return dataFrame
 
