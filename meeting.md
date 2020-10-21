@@ -133,3 +133,11 @@ divide MVP in 3 "chunks", assigned to each person:
         - html & css & java script: **Lindsay**
         - Hosting: **Lindsay**
         - Documentation: **Donna**  
+        
+---
+
+### Wednesday - Oct 21st
+* **Checking in**:
+   - Missy and Donna: Still working on flask and heroku
+   - Xuehai: Testing skeleton and all modules
+   - Lindsay: working on html files
