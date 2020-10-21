@@ -5,20 +5,10 @@
 
 
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import numpy as np
-import seaborn as sns
-import datetime 
-import time
-import radix
-import gpxpy
-import gpxpy.gpx
 import requests
 import math
 import json
 
-get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[2]:
@@ -44,7 +34,7 @@ def get_address(df, index, global_index, one_or_zero):
     idx_cp = index
     if one_or_zero == 1:
         while json_read['QueryStatusCode'] != "Success":
-            DataFrame2.at[global_index,'streetName'] = "Not Available" # global
+            dataFrame.at[global_index,'streetName'] = "Not Available" # global
             global_index += 1
             idx_cp = idx_cp + 1
             lon = df.iloc[idx_cp][0]
@@ -61,7 +51,7 @@ def get_address(df, index, global_index, one_or_zero):
             json_read = json.loads(website.content)
     else:
         while json_read['QueryStatusCode'] != "Success":
-            DataFrame2.at[global_index,'streetName'] = "Not Available" # global
+            dataFrame.at[global_index,'streetName'] = "Not Available" # global
             global_index -= 1
             idx_cp = idx_cp - 1 
             lon = df.iloc[idx_cp][0]
@@ -80,7 +70,7 @@ def get_address(df, index, global_index, one_or_zero):
     address_list = address.split(' ', 1) 
     streetName = address_list[1]
     streetName = streetName.strip()
-    DataFrame2.at[global_index,'streetName'] = streetName # global
+    dataFrame.at[global_index,'streetName'] = streetName # global
     return idx_cp, streetName
 
 
@@ -97,29 +87,29 @@ def binarySearch(df):
     local_end = len(df) - 1
     local_mid = math.ceil((local_start + local_end) / 2)
     # find start point address
-    if DataFrame2.iloc[start]['streetName'] == "":
+    if dataFrame.iloc[start]['streetName'] == "":
         local_start, start_address = get_address(df, local_start, start, 1)    
     else:
-        start_address = DataFrame2.iloc[start]['streetName']
+        start_address = dataFrame.iloc[start]['streetName']
     
     # find mid point address 
-    if DataFrame2.iloc[mid]['streetName'] == "":
+    if dataFrame.iloc[mid]['streetName'] == "":
         local_mid, mid_address = get_address(df, local_mid, mid, 1)
     else:
-        mid_address = DataFrame2.iloc[mid]['streetName']
+        mid_address = dataFrame.iloc[mid]['streetName']
     
     # find end point address 
-    if DataFrame2.iloc[end]['streetName'] == "":
+    if dataFrame.iloc[end]['streetName'] == "":
         local_end, end_address = get_address(df, local_end, end, 0)
     else:
-        end_address = DataFrame2.iloc[end]['streetName']
+        end_address = dataFrame.iloc[end]['streetName']
     
     # base case
     if len(df) <= 2 and start_address != end_address:
-        for index, item in df.iterrows():
-            row, col, streetAddress = item
-            l = [row, col]
-            turn_pts.append(l)
+        # for index, item in df.iterrows():
+        #     row, col, streetAddress = item
+        #     l = [row, col]
+        #     turn_pts.append(l)
         return None
     
     elif start_address == mid_address and mid_address == end_address:
@@ -156,12 +146,12 @@ def df_cleanup(df):
 # In[ ]:
 
 
-def main(DataFrame2):
-    DataFrame2["streetName"]=""
-    turn_pts = list()
-    binarySearch(DataFrame2)
-    df_cleanup(DataFrame2)
-    return DataFrame2
+def main(dataFrame):
+    dataFrame["streetName"]=""
+    # turn_pts = list()
+    binarySearch(dataFrame)
+    df_cleanup(dataFrame)
+    return dataFrame
 
 if __name__ == "__main__":
     main()

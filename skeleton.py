@@ -17,9 +17,13 @@ def main():
     # extract lat and long
     # return a pandas DataFrame
     dataFrame = GpxParse("Morning_Ride.gpx")
-
+    # add an empty street name column
+    dataFrame["streetName"] = ""
+    # re-set the dataFrame's index
+    # binary search highly rely on correct index
+    dataFrame = dataFrame.reset_index(drop=True)
     # lookup street name for each data point
-    lookedup = binarySearch(dataframe)
+    lookedup = binarySearch(dataFrame)
     # for a contiguous series of data points with the same street, eliminate all but the first and last
     # return the revised pandas DataFrame
     filtered = df_cleanup(lookedup)
