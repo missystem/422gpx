@@ -17,7 +17,8 @@
 2. [Wednesday - Oct 7th](https://github.com/missystem/422gpx/blob/main/meeting.md#wednesday---oct-7th)
 3. [Monday - Oct 12th](https://github.com/missystem/422gpx/blob/main/meeting.md#monday---oct-12th)
 4. [Friday - Oct 16th](https://github.com/missystem/422gpx/blob/main/meeting.md#friday---oct-16th)
-5. [Monday - Oct 19th](https://github.com/missystem/422gpx/blob/main/meeting.md#monday---oct-19th)
+5. [Monday - Oct 19th](https://github.com/missystem/422gpx/blob/main/meeting.md#monday---oct-19th)  
+6. [Wednesday - Oct 21st](https://github.com/missystem/422gpx/blob/main/meeting.md#wednesday---oct-21st)
    
 ---
 
