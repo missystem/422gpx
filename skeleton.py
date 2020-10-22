@@ -44,7 +44,10 @@ def runner(path, api_key):
     # compose string like "make a right turn onto Franklin Blvd."
     # write instructions to CSV
     cue_sheet = generate_directions(filtered)
-    return cue_sheet
+    
+    # cue_sheet.to_html(buf="result.html")
+
+    return cue_sheet    # dataframe
 
 # def main(path, api_key):
 #     runner(path, api_key)
@@ -52,6 +55,8 @@ def runner(path, api_key):
 
 # if __name__ == '__main__':
 #     # api_key = sys.argv[1]
+#     path = "Morning_Ride.gpx"
+#     api_key = "0d62ea71819844649ad97eb811da7413"
 #     main(path, api_key)
 
 

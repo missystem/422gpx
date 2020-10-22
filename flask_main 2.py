@@ -9,7 +9,7 @@ import os
 import tempfile
 
 from skeleton import runner ### import our project file
-import pandas
+
 UPLOAD_FOLDER = tempfile.gettempdir()
 ALLOWED_EXTENSIONS = {'txt', 'gpx'}
 
@@ -74,9 +74,12 @@ def upload():
 
     APIkey = flask.request.form['text']
     cue_sheet = do_something(full_path, APIkey)
-    flask.g.mystuff = cue_sheet.to_html()
+    # cue_sheet.to_html(buf="tmep.html")
+    flask.g.result = cue_sheet.to_html()
     app.logger.debug("Rendering result")
+    # flask.g.result = do_something(full_path, APIkey)
     return flask.render_template("display.html")
+    # return flask.render_template("temp.html")
 
 
 def allowed_file(filename: str) -> bool:
@@ -84,12 +87,14 @@ def allowed_file(filename: str) -> bool:
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-def do_something(full_path: str, APIkey: str) -> str:
+def do_something(path: str, APIkey: str) -> str:
     """This is where I would call a function
     that reads the uploaded file and returns something
     """
-    cue_sheet = runner(full_path, APIkey)
-    return cue_sheet
+    # f = open(path, "r")
+    # text = f.readlines()
+    runner(path, APIkey)
+    # return "\n".join(text)
 
 
 ###################
