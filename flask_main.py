@@ -75,12 +75,12 @@ def upload():
 
     APIkey = flask.request.form['text']
     cue_sheet = do_something(full_path, APIkey)
-    cue_sheet.to_html(buf="tmep.html")
-    # flask.g.result = cue_sheet.to_html()
+    # cue_sheet.to_html(buf="tmep.html")
+    flask.g.result = cue_sheet.to_html()
     app.logger.debug("Rendering result")
     # flask.g.result = do_something(full_path, APIkey)
-    # return flask.render_template("display.html")
-    return flask.render_template("temp.html")
+    return flask.render_template("display.html")
+    # return flask.render_template("temp.html")
 
 
 def allowed_file(filename: str) -> bool:
