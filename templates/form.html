@@ -1,15 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Generates a cue sheet based on a user-uploaded GPX file">
-    <!-- need meta for display -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File upload demo</title>
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500|Open+Sans&display=swap" rel="stylesheet">
-    <!-- relative link to css styles -->
-    <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 
 <body>
@@ -18,28 +11,23 @@
     <p><strong>{{ message }}</strong></p>
     {% endfor %}
 
-    <h1>Welcome to our reverse geocoding service.</h1>
-    <form id="upload_demo" method="POST" action="_upload" enctype="multipart/form-data">
-        <label for="the_file">Upload a file:</label>
-        <input id="the_file" type=file name=file>
+    <h1>Welcome to our geocoding/reverse geocoding service.</h1>
+    <form id="upload_demo" method="POST" action="_upload"
+         enctype="multipart/form-data">
+      <label for="the_file">Upload a file:</label>
+      <input id="the_file" type=file name=file>
+      
 
-
-        <br><br>
-        <a href="https://geoservices.tamu.edu/Login/" title="Register for API_key">Click here to register TAMU Geocoding
-            service</a>
+    <br><br>
+        <a href="https://geoservices.tamu.edu/Login/" title="Register for API_key">Click here to register TAMU Geocoding service</a>
         <br>
         <h3>Input your API key:</h3>
         <label for="name">API key:</label>
-        <input type="text" name="text" required minlength="3" maxlength="50" size="40">
+        <input type="text" id="name" name="name" required minlength="3" maxlength="50" size="40">
 
-        {% comment %} <input type="text" name="text" required
-        minlength="3" maxlength="50" size="40"> {% endcomment %}
-
-        <input type="submit" value="Submit" />
-    </form>
-        
-
+    <input type="submit" value="Submit" />
+    </form>   
+   
 
 </body>
-
 </html>
