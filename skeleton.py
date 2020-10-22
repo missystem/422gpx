@@ -14,12 +14,11 @@ import requests
 import math  # for bearings calculation
 import numpy as np  # for bearings calculation
 
-
-def main(api_key):
+def runner(path, api_key):
     # start with a gpx we want to generate directions from
     # extract lat and long
     # return a pandas DataFrame
-    dataFrame = GpxParse("Morning_Ride.gpx") # some other files available
+    dataFrame = GpxParse(path)  # some other files available
     # add an empty street name column
     dataFrame["Street"] = ""
     # scope with 300 data points
@@ -29,10 +28,10 @@ def main(api_key):
     dataFrame = dataFrame.reset_index(drop=True)
     # lookup street name for each data point
     binarySearch(dataFrame, dataFrame, api_key)
-        # df_len = len(dataFrame)
-        # print(df_len)
-        # for i in range(df_len):
-        #     print(dataFrame.iloc[i][2])
+    # df_len = len(dataFrame)
+    # print(df_len)
+    # for i in range(df_len):
+    #     print(dataFrame.iloc[i][2])
     # for a contiguous series of data points with the same street, eliminate all but the first and last
     # return the revised pandas DataFrame
     filtered = df_cleanup(dataFrame)
@@ -45,13 +44,15 @@ def main(api_key):
     # compose string like "make a right turn onto Franklin Blvd."
     # write instructions to CSV
     cue_sheet = generate_directions(filtered)
-
     return cue_sheet
+
+def main(path, api_key):
+    runner(path, api_key)
 
 
 if __name__ == '__main__':
     api_key = sys.argv[1]
-    main(api_key)
+    main(path, api_key)
 
 
 
