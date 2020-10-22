@@ -1,7 +1,14 @@
 ,Distance,Turn,Notes
-0,0.0,start,Start on NW Circle Blvd
-1,0.2,straight,Continue straight onto NW Spruce Ave
-2,0.3,straight,Continue straight onto NW Circle Blvd
-3,0.4,straight,Continue straight onto NW Highland Dr
-4,0.8,straight,Continue straight onto NW Anjni Cir
-5,0.9,end,End
+0,0.0,start,Start on HAYES ST
+1,0.0,right,Turn right onto W 18TH AVE
+2,0.3,straight,Continue straight onto CHAMBERS ST
+3,0.6,straight,Continue straight onto TYLER ST
+4,0.9,left,Turn left onto TYLER ST
+5,1.1,straight,Continue straight onto TYLER ST
+6,1.3,straight,Continue straight onto TYLER ST
+7,1.4,straight,Continue straight onto W 7TH AVE
+8,1.4,straight,Continue straight onto W 6TH AVE
+9,1.5,straight,Continue straight onto TYLER ST
+10,1.5,right,Turn right onto W 5TH AVE
+11,1.7,straight,Continue straight onto BLAIR BLVD
+12,1.7,end,End

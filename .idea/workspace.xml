@@ -4,7 +4,6 @@
     <list default="true" id="d70d26e3-fb0d-40e9-8342-cb9e06ac125f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressLookup.py" beforeDir="false" afterPath="$PROJECT_DIR$/addressLookup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate_directions.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_directions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skeleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

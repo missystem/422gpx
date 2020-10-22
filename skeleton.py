@@ -19,7 +19,7 @@ def main(api_key):
     # start with a gpx we want to generate directions from
     # extract lat and long
     # return a pandas DataFrame
-    dataFrame = GpxParse("09_27_20.gpx") # some other files available
+    dataFrame = GpxParse("Morning_Ride.gpx") # some other files available
     # add an empty street name column
     dataFrame["Street"] = ""
     # scope with 300 data points

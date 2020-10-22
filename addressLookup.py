@@ -132,12 +132,11 @@ def df_cleanup(df):
     for i in range(1, df_len):
         if i == df_len - 1:
             break
-        if df.iloc[i]['Street'] == buffer and df.iloc[i+1]['Street'] != "" and df.iloc[i+1]['Street'] != buffer:
-            buffer2 = df.iloc[i+1]['Street']
-        elif df.iloc[i]['Street'] != buffer and df.iloc[i]['Street'] != "":
-            buffer = buffer2
-        else:
+        if df.iloc[i]['Street'] == buffer or df.iloc[i]['Street'] == "":
             df.at[i, 'Street'] = ""
+        else:
+            df.at[i-1, 'Street'] = buffer
+            buffer = df.iloc[i]['Street']
     return df
 
 
