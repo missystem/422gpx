@@ -5,7 +5,7 @@
 
 
 import pandas as pd
-from skeleton import main
+# from skeleton import main
 import requests
 import math
 import json
