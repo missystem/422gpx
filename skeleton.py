@@ -46,13 +46,13 @@ def runner(path, api_key):
     cue_sheet = generate_directions(filtered)
     return cue_sheet
 
-def main(path, api_key):
-    runner(path, api_key)
+# def main(path, api_key):
+#     runner(path, api_key)
 
 
-if __name__ == '__main__':
-    api_key = sys.argv[1]
-    main(path, api_key)
+# if __name__ == '__main__':
+#     # api_key = sys.argv[1]
+#     main(path, api_key)
 
 
 
