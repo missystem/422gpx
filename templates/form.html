@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>File upload demo</title>
+</head>
+
+<body>
+    <!-- This part is for error messages "flashed" by flask -->
+    {% for message in get_flashed_messages() %}
+    <p><strong>{{ message }}</strong></p>
+    {% endfor %}
+
+    <h1>Welcome to our geocoding/reverse geocoding service.</h1>
+    <form id="upload_demo" method="POST" action="_upload"
+         enctype="multipart/form-data">
+      <label for="the_file">Upload a file:</label>
+      <input id="the_file" type=file name=file>
+      
+
+    <br><br>
+        <a href="https://geoservices.tamu.edu/Login/" title="Register for API_key">Click here to register TAMU Geocoding service</a>
+        <br>
+        <h3>Input your API key:</h3>
+        <label for="name">API key:</label>
+        <input type="text" id="name" name="name" required
+        minlength="3" maxlength="30" size="40">
+
+    <input type="submit" value="Submit" />
+    </form>   
+   
+
+</body>
+</html>
