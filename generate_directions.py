@@ -111,8 +111,8 @@ def generate_directions(dataframe):
     dataframe["Notes"] = notes
     dataframe = dataframe.drop(["Street"], axis=1).copy()
 
-    cue_sheet = dataframe.to_csv("my_cue_sheet.csv")
-    print("generate directions cue sheet: ", cue_sheet)
+    # cue_sheet = dataframe.to_csv("my_cue_sheet.csv")
+    # print("generate directions cue sheet: ", cue_sheet)
     return dataframe
 
 
