@@ -1,7 +1,7 @@
 Documentation for Developers:
 
 Summary of project:
-    Hikers, runners, and cyclists often record their activites using a phone, fitness watch, or dedicated GPS device. They may upload data from their devices to a system like Strava, MapMyRun, or RideWithGPS, which typically provide analysis, map display, and optional social media sharing.
+    As mentioned in the porject specs, hikers, runners, and cyclists often record their activites using a phone, fitness watch, or dedicated GPS device. They may upload data from their devices to a system like Strava, MapMyRun, or RideWithGPS, which typically provide analysis, map display, and optional social media sharing.
     Existing services like Strava provide a variety of analyses and record keeping, but they typically do not provide a fully automated way to extract turn-by-turn directions from a recorded activity. For hikers and runners and some cyclists who travel off-road, this might be very difficult … there may be no suitable database from which to extract suitable cues. For road cyclists, however, it should be possible to extract turn-by-turn directions (a “cue sheet”) from a recording.
     That is what our system will do. The input will be a record consisting of a sequence of (latitude, longitude) pairs, possibly with other information. The output should be a list of turn-by-turn directions, e.g.,
         0.0 km Start at 19th and Agate
@@ -27,13 +27,18 @@ Description:
             2. Filtered_data (pandas dataframe) -> pandas dataframe with only data points immediately before and after each turn, and with street names added
                 * Explain how this works.
             3. Generate_directions (filtered pandas dataframe) -> csv file
-                * generates turn-by-turn directions as a text file
-                    ** calculates distance between each turn (UTM)
-                         ** The library had a distance function which was applied to the data frame.
+                * Generates turn-by-turn directions as a text file
+                    ** Calculates cumulative distance for each datapoint
+			** Eliminates datapoints that are not immediately before or after a turn (if the name of the street changes, this is considered a turn)
+                         ** The geopy library has a distance method that calculates the distance between two latitude/longitude coordinates
                     ** determines if it's a left or right turn (or straight ahead, but the street name changed
-                          ** This was done by finding the angles between two points, if the angle was more than 20 Degrees it was classified as a turn.
-                    ** writes this information to a csv file
+                          ** This was done by finding the closest point greater than 10m from a turning point (10m back from the pre-turn point, and 10m forward from a post-turn point), making a vector, and then using trigonometry to calculate the bearing from one vector to another. 
+			** Puts turn and street information together into English sentences like "Turn left onto Main St."
+                    ** returns this information in an updated DataFrame
          As for the remaining steps, we have the user interface.
-         ** EXPLAIN USER INTERFACE **
+         For the UI we decided to use Flask and Heroku:
+                * We used the example code provided by Professor Michal Young to create our flask_main. We expect a gpx file from the user, which we will pass into our python program. 
+                * At this point we also expect the user to enter his/her own API code, but in the future we hope to add an API to our configuration so that this step won't be asked of a user. For now we also include a link to the site where a user can obtain an API in about 2 minutes.
+     
                
                 
