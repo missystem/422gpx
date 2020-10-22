@@ -112,7 +112,8 @@ def generate_directions(dataframe):
     dataframe = dataframe.drop(["Street"], axis=1).copy()
 
     cue_sheet = dataframe.to_csv("my_cue_sheet.csv")
-    return cue_sheet
+    print("generate directions cue sheet: ", cue_sheet)
+    return dataframe
 
 
 def get_bearing(lat1, lon1, lat2, lon2):
