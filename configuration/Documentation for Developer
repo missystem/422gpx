@@ -28,15 +28,16 @@ Description:
                 * Explain how this works.
             3. Generate_directions (filtered pandas dataframe) -> csv file
                 * generates turn-by-turn directions as a text file
-                    ** calculates distance between each turn (UTM)
-                         ** The library had a distance function which was applied to the data frame.
+                    ** calculates distance between each turn 
+                         ** The geopy library has a distance method that calculates the distance between two latitude/longitude coordinates
                     ** determines if it's a left or right turn (or straight ahead, but the street name changed
-                          ** This was done by finding the angles between two points, if the angle was more than 20 Degrees it was classified as a turn.
-                    ** writes this information to a csv file
+                          ** This was done by finding the closest point greater than 10m from a turning point (10m back from the pre-turn point, and 10m forward from a post-turn point), making a vector, and then using trigonometry to calculate the bearing from one vector to another. 
+			** Puts turn and street information together into English sentences like "Turn left onto Main St."
+                    ** returns this information in an updated DataFrame
          As for the remaining steps, we have the user interface.
          For the UI we decided to use Flask and Heroku:
                 * We used the example code provided by Professor Michal Young to create our flask_main. We expect a gpx file from the user, which we will pass into our python program. 
-                * 
+                * At this point we also expect the user to enter his/her own API code, but in the future we hope to add an API to our configuration so that this step won't be asked of a user. For now we also include a link to the site where a user can obtain an API in about 2 minutes.
      
                
                 
