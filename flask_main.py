@@ -9,6 +9,7 @@ import os
 import tempfile
 
 from skeleton import runner ### import our project file
+import pandas as pd
 
 UPLOAD_FOLDER = tempfile.gettempdir()
 ALLOWED_EXTENSIONS = {'txt', 'gpx'}
@@ -73,9 +74,11 @@ def upload():
     file.save(full_path)
 
     APIkey = flask.request.form['text']
-    
-    flask.g.result = do_something(full_path, APIkey)
+    cue_sheet = do_something(full_path, APIkey)
+    # flask.g.result = cue_sheet.to_html()
     app.logger.debug("Rendering result")
+    flask.g.result = do_something(full_path, APIkey)
+    # return flask.render_template("display.html")
     return flask.render_template("display.html")
 
 
@@ -90,7 +93,8 @@ def do_something(path: str, APIkey: str) -> str:
     """
     # f = open(path, "r")
     # text = f.readlines()
-    runner(path, APIkey)
+    cue_sheet = runner(path, APIkey)
+    return cue_sheet
     # return "\n".join(text)
 
 
