@@ -112,7 +112,7 @@ def binarySearch(df, dataFrame, api_key):
     
     elif start_address == mid_address and mid_address == end_address:
         
-        if local_end - local_start < 20:  # safe interval can be vary
+        if local_end - local_start < 2000:  # safe interval can be vary
             return None
         else:
             binarySearch(df.iloc[local_start:local_mid], dataFrame, api_key)
