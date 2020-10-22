@@ -72,7 +72,7 @@ def upload():
     app.logger.debug(f"Saving the file to {full_path}")
     file.save(full_path)
 
-    APIkey = flask.request.form['txt']
+    APIkey = flask.request.form['text']
     
     flask.g.result = do_something(full_path, APIkey)
     app.logger.debug("Rendering result")
@@ -90,8 +90,6 @@ def do_something(path: str, APIkey: str) -> str:
     """
     # f = open(path, "r")
     # text = f.readlines()
-
-    APIkey = gatherAPI()
     runner(path, APIkey)
     # return "\n".join(text)
 
