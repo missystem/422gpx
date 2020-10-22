@@ -7,3 +7,4 @@
 pip install pandas
 pip install gpxpy
 pip install requests
+pip install geopy
