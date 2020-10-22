@@ -27,8 +27,9 @@ Description:
             2. Filtered_data (pandas dataframe) -> pandas dataframe with only data points immediately before and after each turn, and with street names added
                 * Explain how this works.
             3. Generate_directions (filtered pandas dataframe) -> csv file
-                * generates turn-by-turn directions as a text file
-                    ** calculates distance between each turn 
+                * Generates turn-by-turn directions as a text file
+                    ** Calculates cumulative distance for each datapoint
+			** Eliminates datapoints that are not immediately before or after a turn (if the name of the street changes, this is considered a turn)
                          ** The geopy library has a distance method that calculates the distance between two latitude/longitude coordinates
                     ** determines if it's a left or right turn (or straight ahead, but the street name changed
                           ** This was done by finding the closest point greater than 10m from a turning point (10m back from the pre-turn point, and 10m forward from a post-turn point), making a vector, and then using trigonometry to calculate the bearing from one vector to another. 
