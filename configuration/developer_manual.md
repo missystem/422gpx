@@ -42,6 +42,8 @@
     - FUTURE FEATURES:
         - In graph.py in the main branch there is some starter code that generates a map of the points. We could develop that further using mplleaflet to show it on an actual map. 
         - We can also add a figure for the altitude over time quite easily using plot and the dataframe.
+        - Currently, our address lookup generates some inaccurate addresses; sometimes this is because it picks up addresses on cross streets as the rider continues straight, and sometimes this is because a large area before and after a turn may all be indexed to a single address, as in the case of large box stores on a corner. In the future we may try a modified approach to our binary search lookup algorithm, or another algorithm altogether, to get more accurate results.
+        - We hope to remove the requirement that a user obtain his/her own API to enter on our website. Although the process is fairly painless, our tool will be easier for technologically naive people to use if they can skip this step.
          
 ---
 
