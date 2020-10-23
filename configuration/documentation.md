@@ -100,7 +100,7 @@ This program will take your gpx file and give you a table with turn by turn dire
     <img width="652.5" height="429" src="https://github.com/missystem/422gpx/blob/main/userImage/13.png"> <br />
     <img width="652.5" height="429" src="https://github.com/missystem/422gpx/blob/main/userImage/14.png"> <br />
     <img width="652.5" height="429" src="https://github.com/missystem/422gpx/blob/main/userImage/15.png"> <br />
-    <img width="277.5" height="173" src="https://github.com/missystem/422gpx/blob/main/userImage/16.png"> <br />
+    <img width="555" height="346" src="https://github.com/missystem/422gpx/blob/main/userImage/16.png"> <br />
                 
 3. Once you copied your API key, back to our web page. 
 4. ...
