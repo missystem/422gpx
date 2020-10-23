@@ -142,3 +142,12 @@ divide MVP in 3 "chunks", assigned to each person:
    - Missy and Donna: Still working on flask and heroku
    - Xuehai: Testing skeleton and all modules
    - Lindsay: working on html files
+   
+   
+---
+
+### Thursday - Oct 22nd
+* **Prep For Submissoin**:
+   - Missy and Donna: fixed flask and html
+   - Xuehai: Create a new API
+   - Lindsay: fix hosting on Heroku
