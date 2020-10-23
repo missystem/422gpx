@@ -1,10 +1,10 @@
-## [meeting information](https://github.com/missystem/422gpx/blob/main/meeting.md)
-
-### Documentation  
-  
-1. [Documentation for User]()
-2. [Documentation for Developer]()
+# Documentations
    
+1. [Documentation for User](https://github.com/missystem/422gpx/blob/main/configuration/documentation.md#documentation-for-users)
+2. [Documentation for Developer](https://github.com/missystem/422gpx/blob/main/configuration/documentation.md#documentation-for-developers)
+   
+### [meeting information](https://github.com/missystem/422gpx/blob/main/configuration/meeting.md)
+
 ---
 
 ## Documentation for Users:     
