@@ -58,14 +58,15 @@ Welcome! Thank you for using our services!
 This program will take your gpx file and give you a table with turn by turn directions.   
 [Click here to our webapp](https://gpx422.herokuapp.com/)
     
-How to use it:
-1. Choose an API.   
+### How to use it:
+#### 1. Choose an API.   
 * In this program you can choose between the Google API and TAMU API.   
 * Hint: 
     - Google API is faster and great for bigger files, at the expense of accuracy.   
     - TAMU API is limited to 5000 points, but is more accurate. So, it is much better for smaller files.
-2. Get API key:
-* TAMU:
+    
+#### 2. Get API key:
+* **TAMU:**
     * Go to [TAMU Geoservice website](https://geoservices.tamu.edu/UserServices/Profile/Default.aspx) register an account, then follow the steps show in figures
     * Click on **Services** on the top of the page    
     <img width="635.5" height="333" src="https://github.com/missystem/422gpx/blob/main/userImage/1.png"> <br />
@@ -77,13 +78,24 @@ How to use it:
     <img width="652.5" height="455" src="https://github.com/missystem/422gpx/blob/main/userImage/4.png"> <br />
     * Go to **click here for your API key**       
     <img width="652.5" height="454.5" src="https://github.com/missystem/422gpx/blob/main/userImage/5.png"> <br />
-    * Then your API key will show on the page    
+    * Then your API key will show on the page, copy it.        
     <img width="652.5" height="454" src="https://github.com/missystem/422gpx/blob/main/userImage/5.png"> <br />
 
-* Google:
-    a. (Xuehai, idk how to do it)
+* **Google:**
+    * Sign up a Google account or log in if you already have one.       
+    * Go to [Google developer page](https://developers.google.com/maps/documentation/geocoding/get-api-key)
+    * Click on **project selector page**       
+
+    * In this page, go to **create project**       
+
+    * Once you finished creating project, you will see **APIs & Services > Credentials page**, click on that       
+
+    * On the Credentials page, click Create credentials -> API key.        
+        
+    * The API key will show on your screen, copy it.      
+
                 
-3. Once you have your key, go to our website. 
+3. Once you copied your API key, back to our web page. 
 4. ...
             
 
