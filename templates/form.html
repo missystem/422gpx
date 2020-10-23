@@ -11,30 +11,39 @@
     <p><strong>{{ message }}</strong></p>
     {% endfor %}
 
-    <h1>Welcome to our reverse geocoding service.</h1>
+    <h1 align="center">Welcome to our reverse geocoding service!</h1>
+
+    <h3><a href="https://github.com/missystem/422gpx/blob/main/README.md" target="_blank" title="User Guide">Click here for HOWTO use our services</a></h3>
+    <br>
     <form id="upload_demo" method="POST" action="_upload"
          enctype="multipart/form-data">
       <label for="the_file">Upload a file:</label>
       <input id="the_file" type=file name=file>
-      
-
-    <br><br>
-        <a href="https://github.com/missystem/422gpx/blob/main/README.md" title="User Guide">Click here for detailed HOWTO document for the user</a>
-        <br>
-        <h3> Choose your API: </h3>
-        <label for="APIs">Choose an API: </label>
-        <select name="APIs" id="APIs">
-            <option value="GoogleAPI">Google</option>
-            <option value="TAMUAPI">TAMU</option>
-        </select>
-        <br>
-        <h3>Input your API key:</h3>
-        <label for="name">API key:</label>
-        <input type="text" name="text" required minlength="3" maxlength="50" size="40">
+      <h5>WARNING! Only .gpx file is allowed</h5>
     <br>
+    <h3> Choose your API: </h3>
+    <label for="APIs">Choose an API: </label>
+    <select name="APIs" id="APIs">
+        <option value="GoogleAPI">Google</option>
+        <option value="TAMUAPI">TAMU</option>
+    </select>
+    <br>
+    <br>
+    <h3>Input your API key:</h3>
+    <label for="name">API key:</label>
+    <input type="text" name="text" required minlength="3" maxlength="50" size="40">
+    <br>
+    <style>
+    input[type="submit"]{
+        /* change these properties to whatever you want */
+        background-color: #786549;
+        color: #c3c788;
+        padding: 30;
+    }
+    </style>
     <input type="submit" value="Submit" />
+    
     </form>   
    
-
 </body>
 </html>
