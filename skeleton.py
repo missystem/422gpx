@@ -49,7 +49,7 @@ def runner2(path, api_key):
     # add an empty street name column
     dataFrame["Street"] = ""
     # scope with 300 data points
-    dataFrame = dataFrame.iloc[0:300]
+    dataFrame = dataFrame.iloc[0:2000]
     # re-set the dataFrame's index
     # binary search highly rely on correct index
     dataFrame = dataFrame.reset_index(drop=True)
