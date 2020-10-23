@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d70d26e3-fb0d-40e9-8342-cb9e06ac125f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/FakeDataFrames-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/FakeDataFrames-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/googleapi-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/googleapi-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeDataFrames.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FakeDataFrames.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/googleLookup.py" beforeDir="false" afterPath="$PROJECT_DIR$/googleLookup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/googleapi.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/googleapi.ipynb" afterDir="false" />
     </list>
