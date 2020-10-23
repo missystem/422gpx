@@ -35,13 +35,12 @@
                 - determines if it's a left or right turn (or straight ahead, but the street name changed
                     - This was done by finding the angles between two points, if the angle was more than 20 Degrees it was classified as a turn.
                 - writes this information to a csv file
-<<<<<<< HEAD:configuration/developer_manual.md
-    - As for the remaining steps, we have the user interface.   
-    ** EXPLAIN USER INTERFACE **
-               
-=======
-    - As for the remaining steps, we have the user interface, which is explained in detail above.
-               
+    - As for the remaining steps, we have the user interface, which is explained in detail in the user document. We used flask and html and hosted the website on heroku.
+    
+    - FUTURE FEATURES:
+         - In graph.py in the main branch there is some strter code that generates a map of the points. We could develope that further using mplleaflet to show it on an actual map. 
+         - We can also add a figure for the altitude over time quite easily using plot and the dataframe.
+         
                 
 
    
