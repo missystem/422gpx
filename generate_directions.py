@@ -39,8 +39,8 @@ def generate_directions(dataframe):
 
     # calculate direction of turn
     turn = [""]*num_points
-    # at least .006 miles (~10m) before turn, magic number
-    turn_interval = .006
+    # at least .012 miles (~20m) before turn, magic number
+    turn_interval = .012
     straight = 20  # if < this many degrees, considered straight
     # outer loop to detect a turn
     for point in range(1, num_points-1):
