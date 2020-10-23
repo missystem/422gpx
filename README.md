@@ -47,12 +47,18 @@ This program will take your gpx file and give you a table with turn by turn dire
     <img width="652.5" height="429" src="https://github.com/missystem/422gpx/blob/main/userImage/14.png"> <br />
     * The API key will show on your screen; copy it.      
     <img width="555" height="346" src="https://github.com/missystem/422gpx/blob/main/userImage/15.png"> <br />
-           
-* Once you copied your API key, return to our web page. We recommend you save this code somewhere on your computer so that you can easily use our cuesheet generator over and over. 
+    * Activate your credits as following:    
+    <img width="554.5" height="363" src="https://github.com/missystem/422gpx/blob/main/userImage/21.png"> <br />
+    <img width="554.5" height="399" src="https://github.com/missystem/422gpx/blob/main/userImage/22.png"> <br />
+    <img width="554.5" height="380.5" src="https://github.com/missystem/422gpx/blob/main/userImage/23.png"> <br />
+
+* Once you copied your API key, return to our web page.
+    - We recommend you save this code somewhere on your computer so that you can easily use our cuesheet generator over and over. 
     
 
 ---
    
-For developers who want to use or modify our work: [Developer Manual](https://github.com/missystem/422gpx/blob/main/configuration/developer_manual.md)             
+For developers who want to use or modify our work: [Developer Manual](https://github.com/missystem/422gpx/blob/main/configuration/developer_manual.md)   
+
 --- 
 
