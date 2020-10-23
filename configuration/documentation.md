@@ -66,14 +66,19 @@ How to use it:
     - TAMU API is limited to 5000 points, but is more accurate. So, it is much better for smaller files.
 2. Get API key:
 * TAMU:
-    1. Go to [TAMU Geoservice website](https://geoservices.tamu.edu/UserServices/Profile/Default.aspx) register an account, then follow the steps show in figures
-    2. Click on **Services** on the top of the page    
+    * Go to [TAMU Geoservice website](https://geoservices.tamu.edu/UserServices/Profile/Default.aspx) register an account, then follow the steps show in figures
+    * Click on **Services** on the top of the page    
     <img width="635.5" height="333" src="https://github.com/missystem/422gpx/blob/main/userImage/1.png"> <br />
-    3. Click on **Reverse Geocoding** on the left side of the page
+    * Click on **Reverse Geocoding** on the left side of the page
     <img width="652.5" height="332.5" src="https://github.com/missystem/422gpx/blob/main/userImage/2.png"> <br />
-    4. <img width="652.5" height="453" src="https://github.com/missystem/422gpx/blob/main/userImage/3.png"> <br />
-    5. <img width="652.5" height="455" src="https://github.com/missystem/422gpx/blob/main/userImage/4.png"> <br />
-    6. <img width="652.5" height="454.5" src="https://github.com/missystem/422gpx/blob/main/userImage/5.png"> <br />
+    * Scroll down a bit and you will see **Start Processing Data** under Reverse Geocoding APIs    
+    <img width="652.5" height="453" src="https://github.com/missystem/422gpx/blob/main/userImage/3.png"> <br />
+    * Click **REST** in this step   
+    <img width="652.5" height="455" src="https://github.com/missystem/422gpx/blob/main/userImage/4.png"> <br />
+    * Go to **click here for your API key**       
+    <img width="652.5" height="454.5" src="https://github.com/missystem/422gpx/blob/main/userImage/5.png"> <br />
+    * Then your API key will show on the page    
+    <img width="652.5" height="454" src="https://github.com/missystem/422gpx/blob/main/userImage/5.png"> <br />
 
 * Google:
     a. (Xuehai, idk how to do it)
