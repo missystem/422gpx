@@ -1,14 +1,22 @@
-# 422 Group Project 1   
+# 422 Group Project 1 - Reverse Geocoding a Route
+Description: https://uo-cis422.github.io/chapters/projects/reverse/reverse.html  
+   
+---
 
-## DUE TIME: OCT 23, 17:00
+##Group Members: 
+Donna Hooshmand, Lindsay Marean, Xuehai Zhou, Missy Shi
+
+### Group role assignments:   
+* **Missy** - Repo Master : Clean repo and make sure things are structured nice
+* **Lindsay** - Build Master / Architect : Overall build plan and design
+* **Donna** - Documentation Boss / Schedule : Make sure everything is on track and document meetings and project
+* **Xuehai** - Quality Assurance : Test code and modules to make sure all is running smoothly
+   
+---
 
 ## Weekly meeting time   
 * Monday 4-6pm     
 * Friday 5-7pm   
-
-### Wednesday(Oct 21, 2020) Short Meeting:  
-* 12pm - 1pm  
-* 4pm - 6pm 
 
 ---
    
@@ -19,15 +27,8 @@
 4. [Friday - Oct 16th](https://github.com/missystem/422gpx/blob/main/configuration/meeting.md#friday---oct-16th)
 5. [Monday - Oct 19th](https://github.com/missystem/422gpx/blob/main/configuration/meeting.md#monday---oct-19th)  
 6. [Wednesday - Oct 21st](https://github.com/missystem/422gpx/blob/main/configuration/meeting.md#wednesday---oct-21st)
-   
----
-
-### Group role assignments:   
-* Missy - Repo Master : Clean repo and make sure things are structured nice
-* Lindsay - Build Master / Architect : Overall build plan and design
-* Donna - Documentation Boss / Schedule : Make sure everything is on track and document meetings and project
-* Xuehai - Quality Assurance : Test code and modules to make sure all is running smoothly
-   
+7. [Thursday - Oct 22nd](https://github.com/missystem/422gpx/blob/main/configuration/meeting.md#thursday---oct-22nd)
+    
 ---
 
 ## Project Overview / Sketch out MVP:  
@@ -142,7 +143,6 @@ divide MVP in 3 "chunks", assigned to each person:
    - Missy and Donna: Still working on flask and heroku
    - Xuehai: Testing skeleton and all modules
    - Lindsay: working on html files
-   
    
 ---
 
