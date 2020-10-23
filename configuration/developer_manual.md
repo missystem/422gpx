@@ -35,6 +35,16 @@
                 - determines if it's a left or right turn (or straight ahead, but the street name changed
                     - This was done by finding the angles between two points, if the angle was more than 20 Degrees it was classified as a turn.
                 - writes this information to a csv file
+<<<<<<< HEAD:configuration/developer_manual.md
     - As for the remaining steps, we have the user interface.   
     ** EXPLAIN USER INTERFACE **
                
+=======
+    - As for the remaining steps, we have the user interface, which is explained in detail above.
+               
+                
+
+   
+---
+
+>>>>>>> 5bfed539dff58090e342f46394d832a92a6e2083:configuration/documentation.md
