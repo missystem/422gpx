@@ -35,7 +35,8 @@
             - opens gpx file, pulls out lat, long, and time from each trkpt, and stores it in a data structure
             - gpxpy and pandas are the main libraries used in this module.
         2. Filtered_data (pandas dataframe) -> pandas dataframe with only data points immediately before and after each turn, and with street names added
-            - Explain how this works.
+            - lookup addresses of start, mid, and end data points. If they are not in the same street, then chop the data into two, which are from start->mid, and mid->end. Do the same approach repeatedly until they are on the same street. (binary search)
+            - choose a reverse geocoing service (web service) to do the address lookup job.
         3. Generate_directions (filtered pandas dataframe) -> csv file
             - generates turn-by-turn directions as a text file
                 - calculates distance between each turn (UTM)

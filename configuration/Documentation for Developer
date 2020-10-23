@@ -25,7 +25,10 @@ Description:
                 * opens gpx file, pulls out lat, long, and time from each trkpt, and stores it in a data structure
                 * gpxpy and pandas are the main libraries used in this module.
             2. Filtered_data (pandas dataframe) -> pandas dataframe with only data points immediately before and after each turn, and with street names added
-                * Explain how this works.
+                * The function takes in the dataFrame with pairs of long and lat. Then it operates the binary search to determine if the coordinate in a certain interval is on the same street.
+                    ** Binary Seach: select the start, mid, and end data points in the dataFrame. We do the address lookup, and add their addresses to the corresponding long, lat lines. Then compare their addresses. If they are not in the same street, then split the dataFrame into half. Recursively take the halved as the input dataframe until it finds the data points on the same street in the input dataFrame section. 
+                    ** address lookup: TAMU and Google has reverse geocoding service. They take the lat and long and output an address information in json format. Then we parse that json output to obtain the desired street name.
+                    ** dataFrame clean-up/filter: there're non-turning points addresses have been added into dataFrame. Remain the turning points addresses unchanged, and remove non-turning points addresses. 
             3. Generate_directions (filtered pandas dataframe) -> csv file
                 * Generates turn-by-turn directions as a text file
                     ** Calculates cumulative distance for each datapoint
