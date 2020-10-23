@@ -75,8 +75,8 @@ def upload():
     APIkey = flask.request.form['text']
     
 
-    ApiType= flask.request.form.get('APIs')
-    if(str(ApiType)=='Google'):
+    ApiType= flask.request.form.get("APIs")
+    if (str(ApiType) == "Google"):
         cue_sheet = do_something2(full_path, APIkey)
     else:
         cue_sheet = do_something(full_path, APIkey)
