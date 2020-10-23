@@ -13,25 +13,26 @@
 
     <h1 align="center">Welcome to our reverse geocoding service!</h1>
 
-    <h3><a href="https://github.com/missystem/422gpx/blob/main/README.md" target="_blank" title="User Guide">Click here for HOWTO use our services</a></h3>
+    <h3 align="center"><a href="https://github.com/missystem/422gpx/blob/main/README.md" target="_blank" title="User Guide">Click here for HOWTO use our services</a></h3>
     <br>
+
     <form id="upload_demo" method="POST" action="_upload"
          enctype="multipart/form-data">
-      <label for="the_file">Upload a file:</label>
-      <input id="the_file" type=file name=file>
-      <h5>WARNING! Only .gpx file is allowed</h5>
+    <h4 align="center"><label for="the_file">Upload a file:</label>
+        <input id="the_file" type=file name=file></4>
+    <h5 align="center">WARNING! Only .gpx file is allowed</h5>
     <br>
-    <h3> Choose your API: </h3>
-    <label for="APIs">Choose an API: </label>
+    <h3 align="center"> Choose your API: </h3>
+    <h4 align="center"><label for="APIs">API: </label>
     <select name="APIs" id="APIs">
         <option value="GoogleAPI">Google</option>
         <option value="TAMUAPI">TAMU</option>
-    </select>
+    </select></h4>
     <br>
     <br>
-    <h3>Input your API key:</h3>
-    <label for="name">API key:</label>
-    <input type="text" name="text" required minlength="3" maxlength="50" size="40">
+    <h3 align="center">Input your API key:</h3>
+    <h4 align="center"><label for="name">API key:</label>
+    <input type="text" name="text" required minlength="3" maxlength="50" size="40"></h4>
     <br>
     <style>
     input[type="submit"]{
@@ -41,7 +42,7 @@
         padding: 30;
     }
     </style>
-    <input type="submit" value="Submit" />
+    <h4 align="center"><input type="submit" value="Submit" /></h4>
     
     </form>   
    
