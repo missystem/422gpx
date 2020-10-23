@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d70d26e3-fb0d-40e9-8342-cb9e06ac125f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/-Copy4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/-Copy4.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/-Copy4-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/-Copy4-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FakeDataFrames.py" beforeDir="false" afterPath="$PROJECT_DIR$/FakeDataFrames.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/googleapi-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/googleapi-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/googleLookup.py" beforeDir="false" afterPath="$PROJECT_DIR$/googleLookup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/googleapi.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/googleapi.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

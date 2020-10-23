@@ -3,6 +3,9 @@ import math
 import json
 
 
+def hasNumbers(inputString):
+    return any(char.isdigit() for char in inputString)
+
 def get_address(df, dataFrame, api_key, index, global_index):
     df_len = len(df)
     lon = df.iloc[index][0]
@@ -16,7 +19,7 @@ def get_address(df, dataFrame, api_key, index, global_index):
     street_split = street.split(',')
     street_w_No = street_split[0]
     address_list = street_w_No.split(' ', 1)
-    if address_list[0].isnumeric():
+    if hasNumbers(address_list[0]):
         Street = address_list[1]
     else:
         Street = street_w_No
