@@ -12,13 +12,22 @@ How to use it:
     2. Get API key:
           * TAMU:
                 a. Go to https://geoservices.tamu.edu/UserServices/Profile/Default.aspx
-                b. (* insert the 4 pictures xuehai sent to gp... i cant do it)
-                c.
-                d.
-                e. (* pictures done *)
+                b. Click up-right Log in to create an account and log in
+                c. Go to Reverse Geocoding Service https://geoservices.tamu.edu/Services/ReverseGeocoding/
+                d. Under Reverse Geocoding APIs, click Start Processing Data
+                e. Go to REST page
+                f. On the right side of apiKey, click "click here for you API key" 
+                   https://geoservices.tamu.edu/UserServices/Profile/Default.aspx
+                g. API key obtained
                 
           * Google:
-                a. (*Xuehai, idk how to do it)
+                a. Sign up a Google account and log in.
+                b. Go to https://developers.google.com/maps/documentation/geocoding/get-api-key
+                c. Go to project selector page and create a Google Cloud project
+                d. Go to the APIs & Services > Credentials page. 
+                e. On the Credentials page, click Create credentials -> API key.
+                   The API key created dialog displays your newly created API key.
+                f. g. API key obtained
                 
     3. Once you have your key, go to our website. 
     4. ...
