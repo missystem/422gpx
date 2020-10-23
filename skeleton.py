@@ -29,17 +29,9 @@ def runner(path, api_key):
     dataFrame = dataFrame.reset_index(drop=True)
     # lookup street name for each data point
     binarySearch(dataFrame, dataFrame, api_key)
-    # df_len = len(dataFrame)
-    # print(df_len)
-    # for i in range(df_len):
-    #     print(dataFrame.iloc[i][2])
     # for a contiguous series of data points with the same street, eliminate all but the first and last
     # return the revised pandas DataFrame
     filtered = df_cleanup(dataFrame)
-    df_len = len(filtered)
-    print(df_len)
-    for i in range(df_len):
-        print(filtered.iloc[i][2])
     # figure cumulative distance from turn to turn
     # determine direction of turn (left or right)
     # compose string like "make a right turn onto Franklin Blvd."
@@ -63,17 +55,9 @@ def runner2(path, api_key):
     dataFrame = dataFrame.reset_index(drop=True)
     # lookup street name for each data point
     binarySearch2(dataFrame, dataFrame, api_key)
-    # df_len = len(dataFrame)
-    # print(df_len)
-    # for i in range(df_len):
-    #     print(dataFrame.iloc[i][2])
     # for a contiguous series of data points with the same street, eliminate all but the first and last
     # return the revised pandas DataFrame
     filtered = df_cleanup2(dataFrame)
-    df_len = len(filtered)
-    print(df_len)
-    for i in range(df_len):
-        print(filtered.iloc[i][2])
     # figure cumulative distance from turn to turn
     # determine direction of turn (left or right)
     # compose string like "make a right turn onto Franklin Blvd."
