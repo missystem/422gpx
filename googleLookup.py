@@ -123,8 +123,8 @@ def df_cleanup2(df):
 
 def main(dataFrame, api_key):
     dataFrame["Street"] = ""
-    binarySearch(dataFrame, dataFrame, api_key)   # "AIzaSyCkeuvNkYicjuLSRcy_nP5Or0yH5lRulCE"  for testing
-    df_cleanup(dataFrame)
+    binarySearch2(dataFrame, dataFrame, api_key)   
+    df_cleanup2(dataFrame)
     return dataFrame
 
 
