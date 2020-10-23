@@ -46,5 +46,3 @@
 
    
 ---
-
->>>>>>> 5bfed539dff58090e342f46394d832a92a6e2083:configuration/documentation.md

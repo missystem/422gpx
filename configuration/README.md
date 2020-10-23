@@ -46,6 +46,6 @@ This program will take your gpx file and give you a table with turn by turn dire
 
 ---
    
-If you are interested in how we developed it, click here: [Developer Manual]()             
+If you are interested in how we developed it, click here: [Developer Manual](https://github.com/missystem/422gpx/blob/main/configuration/developer_manual.md)             
 --- 
 
