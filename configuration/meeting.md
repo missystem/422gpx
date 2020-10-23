@@ -27,7 +27,7 @@ Donna Hooshmand, Lindsay Marean, Xuehai Zhou, Missy Shi
 4. [Friday - Oct 16th](https://github.com/missystem/422gpx/blob/main/configuration/meeting.md#friday---oct-16th)
 5. [Monday - Oct 19th](https://github.com/missystem/422gpx/blob/main/configuration/meeting.md#monday---oct-19th)  
 6. [Wednesday - Oct 21st](https://github.com/missystem/422gpx/blob/main/configuration/meeting.md#wednesday---oct-21st)
-7. [Thursday - Oct 22nd]()
+7. [Thursday - Oct 22nd](https://github.com/missystem/422gpx/blob/main/configuration/meeting.md#thursday---oct-22nd)
     
 ---
 
