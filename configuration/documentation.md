@@ -54,8 +54,30 @@
 
 ## Documentation for Users:
 
+Welcome! Thank you for using our services! 
+This program will take your gpx file and give you a table with turn by turn directions.
+The website: https://gpx422.herokuapp.com/
 
+How to use it:
+1. Choose an API.   
+    * In this program you can choose between the Google API and TAMU API.   
+    * Hint: 
+        - Google API is faster and great for bigger files, at the expense of accuracy.   
+        - TAMU API is limited to 5000 points, but is more accurate. So, it is much better for smaller files.
+2. Get API key:
+* TAMU:
+    * Go to [TAMU Geoservice website](https://geoservices.tamu.edu/UserServices/Profile/Default.aspx)
+    * <img width="640" height="475.5" src="https://github.com/missystem/422gpx/blob/main/userImage/1.jpeg"> <br />
+    *
+    *
+    *
 
+* Google:
+    a. (Xuehai, idk how to do it)
+                
+3. Once you have your key, go to our website. 
+4. ...
+            
 
 
 
