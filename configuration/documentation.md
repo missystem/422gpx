@@ -92,8 +92,7 @@ This program will take your gpx file and give you a table with turn by turn dire
                 - determines if it's a left or right turn (or straight ahead, but the street name changed
                     - This was done by finding the angles between two points, if the angle was more than 20 Degrees it was classified as a turn.
                 - writes this information to a csv file
-    - As for the remaining steps, we have the user interface.   
-    ** EXPLAIN USER INTERFACE **
+    - As for the remaining steps, we have the user interface, which is explained in detail above.
                
                 
 
