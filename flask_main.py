@@ -76,6 +76,7 @@ def upload():
     cue_sheet = do_something(full_path, APIkey)
     # flask.g.mystuff = cue_sheet.to_html()
     flask.g.result = cue_sheet.to_html()
+    # flask.g.result = cue_sheet
     app.logger.debug("Rendering result")
     return flask.render_template("display.html")
 
