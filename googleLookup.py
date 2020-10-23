@@ -33,12 +33,10 @@ def sameStreet2(street1, street2):
     if string1 == string2:
         return True
 
-    is_same = 0
+    # is_same = 0
     for item in set1:
         if item in set2:
-            is_same += 1
-    if is_same >= 2:
-        return True
+            return True
     return False
 
 
@@ -123,7 +121,7 @@ def df_cleanup2(df):
 
 def main(dataFrame, api_key):
     dataFrame["Street"] = ""
-    binarySearch2(dataFrame, dataFrame, api_key)   
+    binarySearch2(dataFrame, dataFrame, api_key)
     df_cleanup2(dataFrame)
     return dataFrame
 
