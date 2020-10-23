@@ -8,10 +8,10 @@ from werkzeug.utils import secure_filename
 import os
 import tempfile
 
-from skeleton import runner ### import our project file
+from skeleton import runner, runner2 ### import our project file
 import pandas
 UPLOAD_FOLDER = tempfile.gettempdir()
-ALLOWED_EXTENSIONS = {'txt', 'gpx'}
+ALLOWED_EXTENSIONS = {'gpx'}
 
 ###
 # Globals
@@ -73,7 +73,15 @@ def upload():
     file.save(full_path)
 
     APIkey = flask.request.form['text']
-    cue_sheet = do_something(full_path, APIkey)
+    
+
+    ApiType= flask.request.form.get('APIs')
+    if(str(ApiType)=='Google'):
+        cue_sheet = do_something2(full_path, APIkey)
+    else:
+        cue_sheet = do_something(full_path, APIkey)
+
+    
     # flask.g.mystuff = cue_sheet.to_html()
     flask.g.result = cue_sheet.to_html()
     # flask.g.result = cue_sheet
@@ -93,6 +101,12 @@ def do_something(full_path: str, APIkey: str) -> str:
     cue_sheet = runner(full_path, APIkey)
     return cue_sheet
 
+def do_something2(full_path: str, APIkey: str) -> str:
+    """This is where I would call a function
+    that reads the uploaded file and returns something
+    """
+    cue_sheet = runner2(full_path, APIkey)
+    return cue_sheet
 
 ###################
 #   Error handlers
