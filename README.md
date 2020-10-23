@@ -28,24 +28,24 @@ This program will take your gpx file and give you a table with turn by turn dire
     <img width="652.5" height="454" src="https://github.com/missystem/422gpx/blob/main/userImage/5.png"> <br />
 
 * **Google:**
-    * Sign up a Google account or log in if you already have one.
+    * Sign up for a Google account or log in if you already have one.
     * Go to [Google developer page](https://developers.google.com/maps/documentation/geocoding/get-api-key)
     * Click on **project selector page**       
     <img width="651" height="454.5" src="https://github.com/missystem/422gpx/blob/main/userImage/11.png"> <br />
     * In this page, click on **create project** to create a Google Cloud project     
     <img width="652.5" height="429.5" src="https://github.com/missystem/422gpx/blob/main/userImage/12.png"> <br />
-    * Once you finished creating project, you will see **APIs & Services > Credentials page**, click on that       
+    * Once you finished creating a project, you will see **APIs & Services > Credentials page**, click on that       
     <img width="652.5" height="429" src="https://github.com/missystem/422gpx/blob/main/userImage/13.png"> <br />
     * On the Credentials page, click Create credentials -> API key.      
     <img width="652.5" height="429" src="https://github.com/missystem/422gpx/blob/main/userImage/14.png"> <br />
-    * The API key will show on your screen, copy it.      
+    * The API key will show on your screen; copy it.      
     <img width="555" height="346" src="https://github.com/missystem/422gpx/blob/main/userImage/15.png"> <br />
            
-* Once you copied your API key, back to our web page. 
+* Once you copied your API key, return to our web page. 
     
 
 ---
    
-If you are interested in how we developed it, click here: [Developer Manual](https://github.com/missystem/422gpx/blob/main/configuration/developer_manual.md)             
+For developers who want to use or modify our work: [Developer Manual](https://github.com/missystem/422gpx/blob/main/configuration/developer_manual.md)             
 --- 
 
